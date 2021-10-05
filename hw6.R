@@ -4,63 +4,58 @@ library(tidytext)
 library(textstem)
 
 # Set directory to access all GOP debates
-setwd("datasets/datasets/gop_frags/")
+#setwd("datasets/datasets/")
 
-# Lists all GOP debate file names
-files <- list.files()
+data <- read.csv("gop_debates.csv")
 
-# Reads each GOP debate CSV and adds them individually to data
-data <- map(files,function(x) read_csv(x))
 
-# Creates a list of dataframes where the name is linked to the csv file
-gop_data <- map2(files,data, function(x,y) cbind(x,y))
+# Removes speaker names from speaking turns
+data$text <- gsub(".*:","",data$text)
 
-# Merges all csv files into one
-gop_df <- do.call(rbind,gop_data)
-
-# Renames the first column to date
-names(gop_df)[1] <- "date"
-
-# Removes the .csv from the end of each date row and adds a row identifying the
-# speaker
-df1 <- gop_df %>% 
-  
-  separate(date,"date",sep = "\\.") %>%
-
-  separate(text, "speaker", sep = ":", remove = FALSE)
-
-# Creates a list of each speaking turn without speaker name
-textNoSpeaker <- gsub(".*:","",df1$text)
-
-# Replaces the speaking turn column to remove speaker names
-df1$text <- textNoSpeaker
-
-unique(df1$speaker)
-
-df2<-df1[(df1$speaker=="TRUMP" | df1$speaker=="CRUZ" | df1$speaker=="RUBIO"),]
+# Creating a dataframe for Cruz, Rubio, and Trump speaking turns
+df2<-data[(data$who=="TRUMP" | data$who=="CRUZ" | data$who=="RUBIO"),]
 
 # Splits the dataframe based off speaker
-test <- split(df2, f = df2$speaker) 
+test <- split(df2, f = df2$who) 
 
+# Obtaining stem and lemma of immigration
 stem_words("immigration")
 lemmatize_words("immigration")
+
+# Obtaining stem and lemma of migrant
 stem_words("migrant")
 lemmatize_words("migrant")
+
+# Adding lemma and stem to a list
 immigration_words <- ("immigr|immigration|migrant")
+
+# Making sure any stop words contained within immigration words
+# don't remove the immigration words
 stop_words_bounded <- paste0("\\b", stop_words$word, "\\b", collapse = "|")
 
 
+# Creating a graph of 3 trigrams for Cruz, Rubio and Trump regarding immigration
 df2 %>%
-  unnest_tokens(trigram, text, token = "ngrams", n=3) %>% 
-  count(trigram, sort = TRUE) %>%
-  filter(str_detect(trigram,immigration_words)) %>% 
-  filter(str_count(trigram,stop_words_bounded) < 2) %>% 
-  mutate(trigram = reorder(trigram, n)) %>%
-  group_by(speaker)
-  slice(1:10) %>% 
-  ungroup() %>%
-  ggplot(aes(x=trigram, y=n)) +
-  geom_col() +
-  facet_wrap(~speaker, ncol = 2, scales = "free")
-  xlab(NULL) +
-  coord_flip()
+    group_by(who) %>%
+    unnest_tokens(trigram, text, token = "ngrams", n=3) %>%
+    count(trigram, sort = TRUE) %>%
+    filter(str_detect(trigram,immigration_words)) %>%
+    filter(str_count(trigram,stop_words_bounded) < 2) %>%
+    mutate(trigram = reorder(trigram, n)) %>%
+    slice(1:10) %>%
+    ungroup() %>%
+    ggplot(aes(x=trigram, y=n)) +
+    geom_col() +
+    facet_wrap(~who, nrow = 3, scales = "free") +
+    coord_flip()
+ 
+
+# For almost all of Trump's trigrams about immigration they contain
+# the adjective illegal without any mention of legal immigration. 
+# While both Cruz and Rubio have trigrams containing the word "legal"
+# Rubio's most common trigram contained the word legal rather than
+# illegal for the other two candidates. 
+# As well, Rubio's trigram count for immigration is far higher than the
+# other candidates as well. With Rubio's lowest being equal to both of the
+# other candidates highest.
+
