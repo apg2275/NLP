@@ -35,6 +35,32 @@ textNoSpeaker <- gsub(".*:","",df1$text)
 # Replaces the speaking turn column to remove speaker names
 df1$text <- textNoSpeaker
 
-# Splits the dataframe based off speaker
-test <- split(df1, f = df1$speaker) 
+unique(df1$speaker)
 
+df2<-df1[(df1$speaker=="TRUMP" | df1$speaker=="CRUZ" | df1$speaker=="RUBIO"),]
+
+# Splits the dataframe based off speaker
+test <- split(df2, f = df2$speaker) 
+
+stem_words("immigration")
+lemmatize_words("immigration")
+stem_words("migrant")
+lemmatize_words("migrant")
+immigration_words <- ("immigr|immigration|migrant")
+stop_words_bounded <- paste0("\\b", stop_words$word, "\\b", collapse = "|")
+
+
+df2 %>%
+  unnest_tokens(trigram, text, token = "ngrams", n=3) %>% 
+  count(trigram, sort = TRUE) %>%
+  filter(str_detect(trigram,immigration_words)) %>% 
+  filter(str_count(trigram,stop_words_bounded) < 2) %>% 
+  mutate(trigram = reorder(trigram, n)) %>%
+  group_by(speaker)
+  slice(1:10) %>% 
+  ungroup() %>%
+  ggplot(aes(x=trigram, y=n)) +
+  geom_col() +
+  facet_wrap(~speaker, ncol = 2, scales = "free")
+  xlab(NULL) +
+  coord_flip()
