@@ -46,3 +46,9 @@ nrc_dabest %>% mean_diff()
 # Plots the mean difference compared to Trump
 nrc_dabest %>% mean_diff() %>% plot()
 
+# There appears to be a difference in means for all candidates compared to Trump. All candidates have a higher average
+# fear word count 
+# Trump had an average fear word count of: 3.62 
+# Bush had an average fear word count of: 5.97 with a mean difference to Trump of 2.34 CI95%[1.5;3.19]
+# Cruz had an average fear word count of: 6.68 with a mean difference to Trump of 3.05 CI95%[2.32;3.85]
+# Fiorina had an average fear word count of: 5.97 with a mean difference to Trump of 2.35 CI95%[1.25;3.56]
