@@ -1,0 +1,923 @@
+﻿pmid,sent,text,hedge
+29215311,1,To train a generic deep learning software (DLS) to classify breast cancer on ultrasound images and to compare its performance to human readers with variable breast imaging experience.,0
+29215311,2,"In this retrospective study, all breast ultrasound examinations from January 1, 2014 to December 31, 2014 at our institution were reviewed.",0
+29215311,3,"Patients with post-surgical scars, initially indeterminate, or malignant lesions with histological diagnoses or 2-year follow-up were included.",0
+29215311,4,"The DLS was trained with 70% of the images, and the remaining 30% were used to validate the performance.",0
+29215311,5,"Three readers with variable expertise also evaluated the validation set (radiologist, resident, medical student).",0
+29215311,6,Diagnostic accuracy was assessed with a receiver operating characteristic analysis.,0
+29215311,7,82 patients with malignant and 550 with benign lesions were included.,0
+29215311,7,Time needed for training was 7 min (DLS).,0
+29215311,8,"Evaluation time for the test data set were 3.7 s (DLS) and 28, 22 and 25 min for human readers (decreasing experience).",0
+29215311,9,"Receiver operating characteristic analysis revealed non-significant differences (p-values 0.45-0.47) in the area under the curve of 0.84 (DLS), 0.88 (experienced and intermediate readers) and 0.79 (inexperienced reader).",1
+29215311,10,"DLS may aid diagnosing cancer on breast ultrasound images with an accuracy comparable to radiologists, and learns better and faster than a human reader with no prior experience.",1
+29215311,11,Further clinical trials with dedicated algorithms are warranted.,0
+29215311,12,Advances in knowledge: DLS can be trained classify cancer on breast ultrasound images high accuracy even with comparably few training cases.,1
+29215311,13,The fast evaluation speed makes real-time image analysis feasible.,0
+30852421,1,Recent studies have demonstrated the use of convolutional neural networks (CNNs) to classify images of melanoma with accuracies comparable to those achieved by board-certified dermatologists.,0
+30852421,2,"However, the performance of a CNN exclusively trained with dermoscopic images in a clinical image classification task in direct competition with a large number of dermatologists has not been measured to date.",0
+30852421,3,This study compares the performance of a convolutional neuronal network trained with dermoscopic images exclusively for identifying melanoma in clinical photographs with the manual grading of the same images by dermatologists.,0
+30852421,4,We compared automatic digital melanoma classification with the performance of 145 dermatologists of 12 German university hospitals.,0
+30852421,5,"We used methods from enhanced deep learning to train a CNN with 12,378 open-source dermoscopic images.",0
+30852421,6,We used 100 clinical images to compare the performance of the CNN to that of the dermatologists.,0
+30852421,7,"Dermatologists were compared with the deep neural network in terms of sensitivity, specificity and receiver operating characteristics.",0
+30852421,8,The mean sensitivity and specificity achieved by the dermatologists with clinical images was 89.4% (range: 55.0%-100%) and 64.4% (range: 22.5%-92.5%).,0
+30852421,9,"At the same sensitivity, the CNN exhibited a mean specificity of 68.2% (range 47.5%-86.25%).",0
+30852421,10,"Among the dermatologists, the attendings showed the highest mean sensitivity of 92.8% at a mean specificity of 57.7%.",0
+30852421,11,"With the same high sensitivity of 92.8%, the CNN had a mean specificity of 61.1%.",0
+30852421,12,"For the first time, dermatologist-level image classification was achieved on a clinical image classification task without training on clinical images.",0
+30852421,13,The CNN had a smaller variance of results indicating a higher robustness of computer vision compared with human assessment for dermatologic image classification tasks.,0
+29801159,1,Retinopathy of prematurity (ROP) is a leading cause of childhood blindness worldwide.,0
+29801159,2,"The decision to treat is primarily based on the presence of plus disease, defined as dilation and tortuosity of retinal vessels.",0
+29801159,3,"However, clinical diagnosis of plus disease is highly subjective and variable.",0
+29801159,4,To implement and validate an algorithm based on deep learning to automatically diagnose plus disease from retinal photographs.,0
+29801159,5,A deep convolutional neural network was trained using a data set of 5511 retinal photographs.,0
+29801159,6,"Each image was previously assigned a reference standard diagnosis (RSD) based on consensus of image grading by 3 experts and clinical diagnosis by 1 expert (ie, normal, pre-plus disease, or plus disease).",0
+29801159,7,The algorithm was evaluated by 5-fold cross-validation and tested on an independent set of 100 images.,0
+29801159,8,Images were collected from 8 academic institutions participating in the Imaging and Informatics in ROP (i-ROP) cohort study.,0
+29801159,9,"The deep learning algorithm was tested against 8 ROP experts, each of whom had more than 10 years of clinical experience and more than 5 peer-reviewed publications about ROP.",0
+29801159,10,Data were collected from July 2011 to December 2016.,0
+29801159,11,Data were analyzed from December 2016 to September 2017.,0
+29801159,12,A deep learning algorithm trained on retinal photographs.,0
+29801159,13,Receiver operating characteristic analysis was performed to evaluate performance of the algorithm against the RSD.,0
+29801159,14,"Quadratic-weighted κ coefficients were calculated for ternary classification (ie, normal, pre-plus disease, and plus disease) to measure agreement with the RSD and 8 independent experts.",0
+29801159,15,"Of the 5511 included retinal photographs, 4535 (82.3%) were graded as normal, 805 (14.6%) as pre-plus disease, and 172 (3.1%) as plus disease, based on the RSD.",0
+29801159,16,Mean (SD) area under the receiver operating characteristic curve statistics were 0.94 (0.01) for the diagnosis of normal (vs pre-plus disease or plus disease) and 0.98 (0.01) for the diagnosis of plus disease (vs normal or pre-plus disease).,0
+29801159,17,"For diagnosis of plus disease in an independent test set of 100 retinal images, the algorithm achieved a sensitivity of 93% with 94% specificity.",0
+29801159,18,"For detection of pre-plus disease or worse, the sensitivity and specificity were 100% and 94%, respectively.",0
+29801159,19,"On the same test set, the algorithm achieved a quadratic-weighted κ coefficient of 0.92 compared with the RSD, outperforming 6 of 8 ROP experts.",0
+29801159,20,This fully automated algorithm diagnosed plus disease in ROP with comparable or better accuracy than human experts.,0
+29801159,21,"This has potential applications in disease detection, monitoring, and prognosis in infants at risk of ROP.",1
+30589947,1,We propose a deep learning-based approach to breast mass classification in sonography and compare it with the assessment of four experienced radiologists employing breast imaging reporting and data system 4th edition lexicon and assessment protocol.,0
+30589947,2,Several transfer learning techniques are employed to develop classifiers based on a set of 882 ultrasound images of breast masses.,0
+30589947,3,"Additionally, we introduce the concept of a matching layer.",0
+30589947,4,"The aim of this layer is to rescale pixel intensities of the grayscale ultrasound images and convert those images to red, green, blue (RGB) to more efficiently utilize the discriminative power of the convolutional neural network pretrained on the ImageNet dataset.",0
+30589947,5,We present how this conversion can be determined during fine-tuning using back-propagation.,0
+30589947,6,"Next, we compare the performance of the transfer learning techniques with and without the color conversion.",0
+30589947,7,"To show the usefulness of our approach, we additionally evaluate it using two publicly available datasets.",0
+30589947,8,Color conversion increased the areas under the receiver operating curve for each transfer learning method.,0
+30589947,9,"For the better-performing approach utilizing the fine-tuning and the matching layer, the area under the curve was equal to 0.936 on a test set of 150 cases.",0
+30589947,10,The areas under the curves for the radiologists reading the same set of cases ranged from 0.806 to 0.882.,0
+30589947,11,"In the case of the two separate datasets, utilizing the proposed approach we achieved areas under the curve of around 0.890.",0
+30589947,12,The concept of the matching layer is generalizable and can be used to improve the overall performance of the transfer learning techniques using deep convolutional neural networks.,0
+30589947,13,"When fully developed as a clinical tool, the methods proposed in this paper have the potential to help radiologists with breast mass classification in ultrasound.",1
+30917021,1,The objective of our study was to compare the sensitivity of a deep learning (DL) algorithm with the assessments by radiologists in diagnosing osteonecrosis of the femoral head (ONFH) using digital radiography.,0
+30917021,2,"We performed a two-center, retrospective, noninferiority study of consecutive patients (≥ 16 years old) with a diagnosis of ONFH based on MR images.",0
+30917021,3,"We investigated the following four datasets of unilaterally cropped hip anteroposterior radiographs: training (n = 1346), internal validation (n = 148), temporal external test (n = 148), and geographic external test (n = 250).",0
+30917021,4,"Diagnostic performance was measured for a DL algorithm, a less experienced radiologist, and an experienced radiologist.",0
+30917021,5,Noninferiority analyses for sensitivity were performed for the DL algorithm and both radiologists.,0
+30917021,6,Subgroup analysis for precollapse and postcollapse ONFH was done.,0
+30917021,7,"Overall, 1892 hips (1037 diseased and 855 normal) were included.",0
+30917021,8,"Sensitivity and specificity for the temporal external test set were 84.8% and 91.3% for the DL algorithm, 77.6% and 100.0% for the less experienced radiologist, and 82.4% and 100.0% for the experienced radiologist.",0
+30917021,9,"Sensitivity and specificity for the geographic external test set were 75.2% and 97.2% for the DL algorithm, 77.6% and 75.0% for the less experienced radiologist, and 78.0% and 86.1% for the experienced radiologist.",0
+30917021,10,The sensitivity of the DL algorithm was noninferior to that of the assessments by both radiologists.,0
+30917021,11,"The DL algorithm was more sensitive for precollapse ONFH than the assessment by the less experienced radiologist in the temporal external test set (75.9% vs 57.4%; 95% CI of the difference, 4.5-32.8%).",0
+30917021,12,The sensitivity of the DL algorithm for diagnosing ONFH using digital radiography was noninferior to that of both less experienced and experienced radiologist assessments.,0
+30993926,1,To investigate whether a computer-aided diagnosis (CAD) system based on a deep learning framework (deep learning-based CAD) improves the diagnostic performance of radiologists in differentiating between malignant and benign masses on breast ultrasound (US).,0
+30993926,2,"B-mode US images were prospectively obtained for 253 breast masses (173 benign, 80 malignant) in 226 consecutive patients.",0
+30993926,3,Breast mass US findings were retrospectively analyzed by deep learning-based CAD and four radiologists.,0
+30993926,4,"In predicting malignancy, the CAD results were dichotomized (possibly benign vs. possibly malignant).",0
+30993926,5,The radiologists independently assessed Breast Imaging Reporting and Data System final assessments for two datasets (US images alone or with CAD).,0
+30993926,6,"For each dataset, the radiologists' final assessments were classified as positive (category 4a or higher) and negative (category 3 or lower).",0
+30993926,7,The diagnostic performances of the radiologists for the two datasets (US alone vs. US with CAD) were compared.,0
+30993926,8,"When the CAD results were added to the US images, the radiologists showed significant improvement in specificity (range of all radiologists for US alone vs. US with CAD: 72.8-92.5% vs. 82.1-93.1%; p < 0.001), accuracy (77.9-88.9% vs. 86.2-90.9%; p = 0.038), and positive predictive value (PPV) (60.2-83.3% vs. 70.4-85.2%; p = 0.001).",0
+30993926,9,"However, there were no significant changes in sensitivity (81.3-88.8% vs. 86.3-95.0%; p = 0.120) and negative predictive value (91.4-93.5% vs. 92.9-97.3%; p = 0.259).",1
+30993926,10,"Deep learning-based CAD could improve radiologists' diagnostic performance by increasing their specificity, accuracy, and PPV in differentiating between malignant and benign masses on breast US.",1
+30179104,1,Purpose To develop and validate a deep learning system (DLS) for staging liver fibrosis by using CT images in the liver.,0
+30179104,2,Materials and Methods DLS for CT-based staging of liver fibrosis was created by using a development data set that included portal venous phase CT images in 7461 patients with pathologically confirmed liver fibrosis.,0
+30179104,3,The diagnostic performance of the DLS was evaluated in separate test data sets for 891 patients.,0
+30179104,4,The influence of patient characteristics and CT techniques on the staging accuracy of the DLS was evaluated by logistic regression analysis.,0
+30179104,5,"In a subset of 421 patients, the diagnostic performance of the DLS was compared with that of the radiologist's assessment, aminotransferase-to-platelet ratio index (APRI), and fibrosis-4 index by using the area under the receiver operating characteristic curve (AUROC) and Obuchowski index.",0
+30179104,6,"Results In the test data sets, the DLS had a staging accuracy of 79.4% (707 of 891) and an AUROC of 0.96, 0.97, and 0.95 for diagnosing significant fibrosis (F2-4), advanced fibrosis (F3-4), and cirrhosis (F4), respectively.",0
+30179104,7,"At multivariable analysis, only pathologic fibrosis stage significantly affected the staging accuracy of the DLS (P = .016 and .013 for F1 and F2, respectively, compared with F4), whereas etiology of liver disease and CT technique did not.",0
+30179104,8,"The DLS (Obuchowski index, 0.94) outperformed the radiologist's interpretation, APRI, and fibrosis-4 index (Obuchowski index range, 0.71-0.81; P Ë‚ .001) for staging liver fibrosis.",0
+30179104,9,Conclusion The deep learning system allows for accurate staging of liver fibrosis by using CT images.,0
+30179104,10,"RSNA, 2018 Online supplemental material is available for this article.",0
+28422152,1,"The introduction of lung cancer screening programs will produce an unprecedented amount of chest CT scans in the near future, which radiologists will have to read in order to decide on a patient follow-up strategy.",0
+28422152,2,"According to the current guidelines, the workup of screen-detected nodules strongly relies on nodule size and nodule type.",0
+28422152,3,"In this paper, we present a deep learning system based on multi-stream multi-scale convolutional networks, which automatically classifies all nodule types relevant for nodule workup.",0
+28422152,4,The system processes raw CT data containing a nodule without the need for any additional information such as nodule segmentation or nodule size and learns a representation of 3D data by analyzing an arbitrary number of 2D views of a given nodule.,0
+28422152,5,The deep learning system was trained with data from the Italian MILD screening trial and validated on an independent set of data from the Danish DLCST screening trial.,0
+28422152,6,"We analyze the advantage of processing nodules at multiple scales with a multi-stream convolutional network architecture, and we show that the proposed deep learning system achieves performance at classifying nodule type that surpasses the one of classical machine learning approaches and is within the inter-observer variability among four experienced human observers.",0
+30398430,1,"Purpose To develop and validate a deep learning algorithm that predicts the final diagnosis of Alzheimer disease (AD), mild cognitive impairment, or neither at fluorine 18 (18F) fluorodeoxyglucose (FDG) PET of the brain and compare its performance to that of radiologic readers.",0
+30398430,2,"Materials and Methods Prospective 18F-FDG PET brain images from the Alzheimer's Disease Neuroimaging Initiative (ADNI) (2109 imaging studies from 2005 to 2017, 1002 patients) and retrospective independent test set (40 imaging studies from 2006 to 2016, 40 patients) were collected.",0
+30398430,3,Final clinical diagnosis at follow-up was recorded.,0
+30398430,4,"Convolutional neural network of InceptionV3 architecture was trained on 90% of ADNI data set and tested on the remaining 10%, as well as the independent test set, with performance compared to radiologic readers.",0
+30398430,5,"Model was analyzed with sensitivity, specificity, receiver operating characteristic (ROC), saliency map, and t-distributed stochastic neighbor embedding.",0
+30398430,6,"Results The algorithm achieved area under the ROC curve of 0.98 (95% confidence interval: 0.94, 1.00) when evaluated on predicting the final clinical diagnosis of AD in the independent test set (82% specificity at 100% sensitivity), an average of 75.8 months prior to the final diagnosis, which in ROC space outperformed reader performance (57% [four of seven] sensitivity, 91% [30 of 33] specificity; P < .05).",0
+30398430,7,Saliency map demonstrated attention to known areas of interest but with focus on the entire brain.,0
+30398430,8,"Conclusion By using fluorine 18 fluorodeoxyglucose PET of the brain, a deep learning algorithm developed for early prediction of Alzheimer disease achieved 82% specificity at 100% sensitivity, an average of 75.8 months prior to the final diagnosis.",0
+30398430,9,"RSNA, 2018 Online supplemental material is available for this article.",0
+30398430,10,See also the editorial by Larvie in this issue.,0
+29428356,1,"We tested the use of a deep learning algorithm to classify the clinical images of 12 skin diseases-basal cell carcinoma, squamous cell carcinoma, intraepithelial carcinoma, actinic keratosis, seborrheic keratosis, malignant melanoma, melanocytic nevus, lentigo, pyogenic granuloma, hemangioma, dermatofibroma, and wart.",0
+29428356,2,"The convolutional neural network (Microsoft ResNet-152 model; Microsoft Research Asia, Beijing, China) was fine-tuned with images from the training portion of the Asan dataset, MED-NODE dataset, and atlas site images (19,398 images in total).",0
+29428356,3,"The trained model was validated with the testing portion of the Asan, Hallym and Edinburgh datasets.",0
+29428356,4,"With the Asan dataset, the area under the curve for the diagnosis of basal cell carcinoma, squamous cell carcinoma, intraepithelial carcinoma, and melanoma was 0.96 ± 0.01, 0.83 ± 0.01, 0.82 ± 0.02, and 0.96 ± 0.00, respectively.",0
+29428356,5,"With the Edinburgh dataset, the area under the curve for the corresponding diseases was 0.90 ± 0.01, 0.91 ± 0.01, 0.83 ± 0.01, and 0.88 ± 0.01, respectively.",0
+29428356,6,"With the Hallym dataset, the sensitivity for basal cell carcinoma diagnosis was 87.1% ± 6.0%.",0
+29428356,7,The tested algorithm performance with 480 Asan and Edinburgh images was comparable to that of 16 dermatologists.,0
+29428356,8,"To improve the performance of convolutional neural network, additional images with a broader range of ages and ethnicities should be collected.",0
+30418527,1,Detection of active pulmonary tuberculosis on chest radiographs (CRs) is critical for the diagnosis and screening of tuberculosis.,0
+30418527,2,An automated system may help streamline the tuberculosis screening process and improve diagnostic performance.,1
+30418527,3,We developed a deep learning-based automatic detection (DLAD) algorithm using 54c221 normal CRs and 6768 CRs with active pulmonary tuberculosis that were labeled and annotated by 13 board-certified radiologists.,0
+30418527,4,"The performance of DLAD was validated using 6 external multicenter, multinational datasets.",0
+30418527,5,"To compare the performances of DLAD with physicians, an observer performance test was conducted by 15 physicians including nonradiology physicians, board-certified radiologists, and thoracic radiologists.",0
+30418527,6,"Image-wise classification and lesion-wise localization performances were measured using area under the receiver operating characteristic (ROC) curves and area under the alternative free-response ROC curves, respectively.",0
+30418527,7,Sensitivities and specificities of DLAD were calculated using 2 cutoffs (high sensitivity [98%] and high specificity [98%]) obtained through in-house validation.,0
+30418527,8,DLAD demonstrated classification performance of 0.977-1.000 and localization performance of 0.973-1.000.,0
+30418527,9,Sensitivities and specificities for classification were 94.3%-100% and 91.1%-100% using the high-sensitivity cutoff and 84.1%-99.0% and 99.1%-100% using the high-specificity cutoff.,0
+30418527,10,DLAD showed significantly higher performance in both classification (0.993 vs 0.746-0.971) and localization (0.993 vs 0.664-0.925) compared to all groups of physicians.,0
+30418527,11,"Our DLAD demonstrated excellent and consistent performance in the detection of active pulmonary tuberculosis on CR, outperforming physicians, including thoracic radiologists.",0
+30662564,1,Artificial intelligence (AI) based on convolutional neural networks (CNNs) has a great potential to enhance medical workflow and improve health care quality.,0
+30662564,2,"Of particular interest is practical implementation of such AI-based software as a cloud-based tool aimed for telemedicine, the practice of providing medical care from a distance using electronic interfaces.",0
+30662564,3,"Methods: In this study, we used a dataset of labeled 35,900 optical coherence tomography (OCT) images obtained from age-related macular degeneration (AMD) patients and used them to train three types of CNNs to perform AMD diagnosis.",0
+30662564,4,"Results: Here, we present an AI- and cloud-based telemedicine interaction tool for diagnosis and proposed treatment of AMD.",0
+30662564,5,"Through deep learning process based on the analysis of preprocessed optical coherence tomography (OCT) imaging data, our AI-based system achieved the same image discrimination rate as that of retinal specialists in our hospital.",0
+30662564,6,The AI platform's detection accuracy was generally higher than 90% and was significantly superior (p < 0.001) to that of medical students (69.4% and 68.9%) and equal (p = 0.99) to that of retinal specialists (92.73% and 91.90%).,0
+30662564,7,"Furthermore, it provided appropriate treatment recommendations comparable to those of retinal specialists.",0
+30662564,8,"Conclusions: We therefore developed a website for realistic cloud computing based on this AI platform, available at https://www.ym.edu.tw/~AI-OCT/.",0
+30662564,9,Patients can upload their OCT images to the website to verify whether they have AMD and require treatment.,0
+30662564,10,Using an AI-based cloud service represents a real solution for medical imaging diagnostics and telemedicine.,0
+30067607,1,The aim of this study was to compare the diagnostic performance of a deep learning algorithm with that of radiologists in diagnosing maxillary sinusitis on Waters' view radiographs.,0
+30067607,2,"Among 80,475 Waters' view radiographs, examined between May 2003 and February 2017, 9000 randomly selected cases were classified as normal or maxillary sinusitis based on radiographic findings and divided into training (n = 8000) and validation (n = 1000) sets to develop a deep learning algorithm.",0
+30067607,3,Two test sets composed of Waters' view radiographs with concurrent paranasal sinus computed tomography were labeled based on computed tomography findings: one with temporal separation (n = 140) and the other with geographic separation (n = 200) from the training set.,0
+30067607,4,"Area under the receiver operating characteristics curve (AUC), sensitivity, and specificity of the algorithm and 5 radiologists were assessed.",0
+30067607,5,Interobserver agreement between the algorithm and majority decision of the radiologists was measured.,0
+30067607,6,The correlation coefficient between the predicted probability of the algorithm and average confidence level of the radiologists was determined.,0
+30067607,7,"The AUCs of the deep learning algorithm were 0.93 and 0.88 for the temporal and geographic external test sets, respectively.",0
+30067607,8,The AUCs of the radiologists were 0.83 to 0.89 for the temporal and 0.75 to 0.84 for the geographic external test sets.,0
+30067607,9,The deep learning algorithm showed statistically significantly higher AUC than radiologist in both test sets.,0
+30067607,10,"In terms of sensitivity and specificity, the deep learning algorithm was comparable to the radiologists.",1
+30067607,11,"A strong interobserver agreement was noted between the algorithm and radiologists (Cohen κ coefficient, 0.82).",0
+30067607,12,"The correlation coefficient between the predicted probability of the algorithm and confidence level of radiologists was 0.89 and 0.84 for the 2 test sets, respectively.",0
+30067607,13,The deep learning algorithm could diagnose maxillary sinusitis on Waters' view radiograph with superior AUC and comparable sensitivity and specificity to those of radiologists.,1
+30948806,1,"Owing to improvements in image recognition via deep learning, machine-learning algorithms could eventually be applied to automated medical diagnoses that can guide clinical decision-making.",1
+30948806,2,"However, these algorithms remain a 'black box' in terms of how they generate the predictions from the input data.",1
+30948806,3,"Also, high-performance deep learning requires large, high-quality training datasets.",0
+30948806,4,"Here, we report the development of an understandable deep-learning system that detects acute intracranial haemorrhage (ICH) and classifies five ICH subtypes from unenhanced head computed-tomography scans.",0
+30948806,5,"By using a dataset of only 904 cases for algorithm training, the system achieved a performance similar to that of expert radiologists in two independent test datasets containing 200 cases (sensitivity of 98% and specificity of 95%) and 196 cases (sensitivity of 92% and specificity of 95%).",0
+30948806,6,"The system includes an attention map and a prediction basis retrieved from training data to enhance explainability, and an iterative process that mimics the workflow of radiologists.",0
+30948806,7,Our approach to algorithm development can facilitate the development of deep-learning systems for a variety of clinical applications and accelerate their adoption into clinical practice.,0
+30253801,1,"Due to the occult anatomic location of the nasopharynx and frequent presence of adenoid hyperplasia, the positive rate for malignancy identification during biopsy is low, thus leading to delayed or missed diagnosis for nasopharyngeal malignancies upon initial attempt.",0
+30253801,2,"Here, we aimed to develop an artificial intelligence tool to detect nasopharyngeal malignancies under endoscopic examination based on deep learning.",0
+30253801,3,An endoscopic images-based nasopharyngeal malignancy detection model (eNPM-DM) consisting of a fully convolutional network based on the inception architecture was developed and fine-tuned using separate training and validation sets for both classification and segmentation.,0
+30253801,4,"Briefly, a total of 28,966 qualified images were collected.",0
+30253801,5,"Among these images, 27,536 biopsy-proven images from 7951 individuals obtained from January 1st, 2008, to December 31st, 2016, were split into the training, validation and test sets at a ratio of 7:1:2 using simple randomization.",0
+30253801,6,"Additionally, 1430 images obtained from January 1st, 2017, to March 31st, 2017, were used as a prospective test set to compare the performance of the established model against oncologist evaluation.",0
+30253801,7,"The dice similarity coefficient (DSC) was used to evaluate the efficiency of eNPM-DM in automatic segmentation of malignant area from the background of nasopharyngeal endoscopic images, by comparing automatic segmentation with manual segmentation performed by the experts.",0
+30253801,8,"All images were histopathologically confirmed, and included 5713 (19.7%) normal control, 19,107 (66.0%) nasopharyngeal carcinoma (NPC), 335 (1.2%) NPC and 3811 (13.2%) benign diseases.",0
+30253801,9,The eNPM-DM attained an overall accuracy of 88.7% (95% confidence interval (CI) 87.8%-89.5%) in detecting malignancies in the test set.,0
+30253801,10,"In the prospective comparison phase, eNPM-DM outperformed the experts: the overall accuracy was 88.0% (95% CI 86.1%-89.6%) vs. 80.5% (95% CI 77.0%-84.0%).",0
+30253801,11,"The eNPM-DM required less time (40 s vs. 110.0 Â± 5.8 min) and exhibited encouraging performance in automatic segmentation of nasopharyngeal malignant area from the background, with an average DSC of 0.78 ± 0.24 and 0.75 ± 0.26 in the test and prospective test sets, respectively.",0
+30253801,12,"The eNPM-DM outperformed oncologist evaluation in diagnostic classification of nasopharyngeal mass into benign versus malignant, and realized automatic segmentation of malignant area from the background of nasopharyngeal endoscopic images.",0
+30583848,1,The incidence of thyroid cancer is rising steadily because of overdiagnosis and overtreatment conferred by widespread use of sensitive imaging techniques for screening.,0
+30583848,2,"This overall incidence growth is especially driven by increased diagnosis of indolent and well-differentiated papillary subtype and early-stage thyroid cancer, whereas the incidence of advanced-stage thyroid cancer has increased marginally.",0
+30583848,3,Thyroid ultrasound is frequently used to diagnose thyroid cancer.,0
+30583848,4,The aim of this study was to use deep convolutional neural network (DCNN) models to improve the diagnostic accuracy of thyroid cancer by analysing sonographic imaging data from clinical ultrasounds.,0
+30583848,5,"We did a retrospective, multicohort, diagnostic study using ultrasound images sets from three hospitals in China.",0
+30583848,6,"We developed and trained the DCNN model on the training set, 131 731 ultrasound images from 17 627 patients with thyroid cancer and 180 668 images from 25 325 controls from the thyroid imaging database at Tianjin Cancer Hospital.",0
+30583848,7,Clinical diagnosis of the training set was made by 16 radiologists from Tianjin Cancer Hospital.,0
+30583848,8,Images from anatomical sites that were judged as not having cancer were excluded from the training set and only individuals with suspected thyroid cancer underwent pathological examination to confirm diagnosis.,0
+30583848,9,"The model's diagnostic performance was validated in an internal validation set from Tianjin Cancer Hospital (8606 images from 1118 patients) and two external datasets in China (the Integrated Traditional Chinese and Western Medicine Hospital, Jilin, 741 images from 154 patients; and the Weihai Municipal Hospital, Shandong, 11 039 images from 1420 patients).",0
+30583848,10,All individuals with suspected thyroid cancer after clinical examination in the validation sets had pathological examination.,0
+30583848,11,We also compared the specificity and sensitivity of the DCNN model with the performance of six skilled thyroid ultrasound radiologists on the three validation sets.,0
+30583848,12,"Between Jan 1, 2012, and March 28, 2018, ultrasound images for the four study cohorts were obtained.",0
+30583848,13,"The model achieved high performance in identifying thyroid cancer patients in the validation sets tested, with area under the curve values of 0Â·947 (95% CI 0.935-0.959) for the Tianjin internal validation set, 0.912 (95% CI 0.865-0.958) for the Jilin external validation set, and 0.908 (95% CI 0.891-0.925) for the Weihai external validation set.",0
+30583848,14,The DCNN model also showed improved performance in identifying thyroid cancer patients versus skilled radiologists.,0
+30583848,15,"For the Tianjin internal validation set, sensitivity was 93.4% (95% CI 89.6-96.1) versus 96.9% (93.9-98.6; p=0.003) and specificity was 86.1% (81.1-90.2) versus 59.4% (53.0-65.6; p<0.0001).",0
+30583848,16,"For the Jilin external validation set, sensitivity was 84.3% (95% CI 73.6-91.9) versus 92.9% (84.1-97.6; p=0.048) and specificity was 86.9% (95% CI 77.8-93.3) versus 57.1% (45.9-67.9; p<0.0001).",0
+30583848,17,"For the Weihai external validation set, sensitivity was 84.7% (95% CI 77.0-90.7) versus 89.0% (81.9-94.0; p=0.25) and specificity was 87.8% (95% CI 81.6-92.5) versus 68.6% (60.7-75.8; p<0.0001).",0
+30583848,18,The DCNN model showed similar sensitivity and improved specificity in identifying patients with thyroid cancer compared with a group of skilled radiologists.,0
+30583848,19,The improved technical performance of the DCNN model warrants further investigation as part of randomised clinical trials.,0
+30583848,20,"The Program for Changjiang Scholars and Innovative Research Team in University in China, and National Natural Science Foundation of China.",0
+31481392,1,To establish and validate a universal artificial intelligence (AI) platform for collaborative management of cataracts involving multilevel clinical scenarios and explored an AI-based medical referral pattern to improve collaborative efficiency and resource coverage.,0
+31481392,2,"The training and validation datasets were derived from the Chinese Medical Alliance for Artificial Intelligence, covering multilevel healthcare facilities and capture modes.",0
+31481392,3,"The datasets were labelled using a three-step strategy: (1) capture mode recognition; (2) cataract diagnosis as a normal lens, cataract or a postoperative eye and (3) detection of referable cataracts with respect to aetiology and severity.",0
+31481392,4,"Moreover, we integrated the cataract AI agent with a real-world multilevel referral pattern involving self-monitoring at home, primary healthcare and specialised hospital services.",0
+31481392,5,"The universal AI platform and multilevel collaborative pattern showed robust diagnostic performance in three-step tasks: (1) capture mode recognition (area under the curve (AUC) 99.28%-99.71%), (2) cataract diagnosis (normal lens, cataract or postoperative eye with AUCs of 99.82%, 99.96% and 99.93% for mydriatic-slit lamp mode and AUCs >99% for other capture modes) and (3) detection of referable cataracts (AUCs >91% in all tests).",0
+31481392,6,"In the real-world tertiary referral pattern, the agent suggested 30.3% of people be 'referred', substantially increasing the ophthalmologist-to-population service ratio by 10.2-fold compared with the traditional pattern.",0
+31481392,7,The universal AI platform and multilevel collaborative pattern showed robust diagnostic performance and effective service for cataracts.,0
+31481392,8,The context of our AI-based medical referral pattern will be extended to other common disease conditions and resource-intensive situations.,0
+31077698,1,Cancer invasion depth is a critical factor affecting the choice of treatment in patients with superficial squamous cell carcinoma (SCC).,0
+31077698,2,"However, the diagnosis of invasion depth is currently subjective and liable to interobserver variability.",0
+31077698,3,We developed a deep learning-based artificial intelligence (AI) system based on Single Shot MultiBox Detector architecture for the assessment of superficial esophageal SCC.,0
+31077698,4,We obtained endoscopic images from patients with superficial esophageal SCC at our facility between December 2005 and December 2016.,0
+31077698,5,"After excluding poor-quality images, 8660 non-magnified endoscopic (non-ME) and 5678 ME images from 804 superficial esophageal SCCs with pathologic proof of cancer invasion depth were used as the training dataset, and 405 non-ME images and 509 ME images from 155 patients were selected for the validation set.",0
+31077698,6,"Our system showed a sensitivity of 90.1%, specificity of 95.8%, positive predictive value of 99.2%, negative predictive value of 63.9%, and an accuracy of 91.0% for differentiating pathologic mucosal and submucosal microinvasive (SM1) cancers from submucosal deep invasive (SM2/3) cancers.",0
+31077698,7,"Cancer invasion depth was diagnosed by 16 experienced endoscopists using the same validation set, with an overall sensitivity of 89.8%, specificity of 88.3%, positive predictive value of 97.9%, negative predictive value of 65.5%, and an accuracy of 89.6%.",0
+31077698,8,"This newly developed AI system showed favorable performance for diagnosing invasion depth in patients with superficial esophageal SCC, with comparable performance to experienced endoscopists.",0
+30251934,1,Purpose To develop and validate a deep learning-based automatic detection algorithm (DLAD) for malignant pulmonary nodules on chest radiographs and to compare its performance with physicians including thoracic radiologists.,0
+30251934,2,"Materials and Methods For this retrospective study, DLAD was developed by using 43 292 chest radiographs (normal radiograph-to-nodule radiograph ratio, 34 067:9225) in 34 676 patients (healthy-to-nodule ratio, 30 784:3892; 19 230 men [mean age, 52.8 years; age range, 18-99 years]; 15 446 women [mean age, 52.3 years; age range, 18-98 years]) obtained between 2010 and 2015, which were labeled and partially annotated by 13 board-certified radiologists, in a convolutional neural network.",0
+30251934,3,Radiograph classification and nodule detection performances of DLAD were validated by using one internal and four external data sets from three South Korean hospitals and one U.S. hospital.,0
+30251934,4,"For internal and external validation, radiograph classification and nodule detection performances of DLAD were evaluated by using the area under the receiver operating characteristic curve (AUROC) and jackknife alternative free-response receiver-operating characteristic (JAFROC) figure of merit (FOM), respectively.",0
+30251934,5,"An observer performance test involving 18 physicians, including nine board-certified radiologists, was conducted by using one of the four external validation data sets.",0
+30251934,6,"Performances of DLAD, physicians, and physicians assisted with DLAD were evaluated and compared.",0
+30251934,7,"Results According to one internal and four external validation data sets, radiograph classification and nodule detection performances of DLAD were a range of 0.92-0.99 (AUROC) and 0.831-0.924 (JAFROC FOM), respectively.",0
+30251934,8,"DLAD showed a higher AUROC and JAFROC FOM at the observer performance test than 17 of 18 and 15 of 18 physicians, respectively (P < .05), and all physicians showed improved nodule detection performances with DLAD (mean JAFROC FOM improvement, 0.043; range, 0.006-0.190; P < .05).",0
+30251934,9,"Conclusion This deep learning-based automatic detection algorithm outperformed physicians in radiograph classification and nodule detection performance for malignant pulmonary nodules on chest radiographs, and it enhanced physicians' performances when used as a second reader.",0
+30251934,10,"RSNA, 2018 Online supplemental material is available for this article.",0
+31304372,1,Deep learning algorithms have been used to detect diabetic retinopathy (DR) with specialist-level accuracy.,0
+31304372,2,"This study aims to validate one such algorithm on a large-scale clinical population, and compare the algorithm performance with that of human graders.",0
+31304372,3,"A total of 25,326 gradable retinal images of patients with diabetes from the community-based, nationwide screening program of DR in Thailand were analyzed for DR severity and referable diabetic macular edema (DME).",0
+31304372,4,Grades adjudicated by a panel of international retinal specialists served as the reference standard.,0
+31304372,5,"Relative to human graders, for detecting referable DR (moderate NPDR or worse), the deep learning algorithm had significantly higher sensitivity (0.97 vs. 0.74, p < 0.001), and a slightly lower specificity (0.96 vs. 0.98, p < 0.001).",1
+31304372,6,"Higher sensitivity of the algorithm was also observed for each of the categories of severe or worse NPDR, PDR, and DME (p < 0.001 for all comparisons).",0
+31304372,7,The quadratic-weighted kappa for determination of DR severity levels by the algorithm and human graders was 0.85 and 0.78 respectively (p < 0.001 for the difference).,0
+31304372,8,"Across different severity levels of DR for determining referable disease, deep learning significantly reduced the false negative rate (by 23%) at the cost of slightly higher false positive rates (2%).",1
+31304372,9,Deep learning algorithms may serve as a valuable tool for DR screening.,1
+30302633,1,"The patient-based diagnosis with an artificial neural network (ANN) has shown potential utility for the detection of coronary artery disease; however, the region-based accuracy of the detected regions has not been fully evaluated.",1
+30302633,2,The aim of this study was to demonstrate the accuracy of all detected regions compared with expert interpretation.,0
+30302633,3,"A total of 109 abnormal regions including 33 regions with stress defects and 76 regions with ischemia were examined, which were derived from 21 patients who underwent myocardial perfusion SPECT within 45 days of coronary angiography.",0
+30302633,4,"The gray and color scale images, a polar map of stress, rest and difference, and left ventricular function were displayed on the monitor to score the extent and severity of stress defect and ischemia.",0
+30302633,5,Two experienced nuclear medicine physicians (Observers A and B) scored the abnormality with a 4-point scale and draw abnormal regions on a polar map.,0
+30302633,6,"The gold standard was determined by the final judgment of normal or abnormal by the consensus of two other independent expert nuclear cardiologists, and was compared with the stress defect and ischemia derived from ANN.",0
+30302633,7,The concordance rate of ANN to the gold standard was higher than that of two observers.,0
+30302633,8,"Furthermore, the κ coefficient indicated moderate to substantial agreement for stress defect and slight to the fair agreement for ischemia.",1
+30302633,9,"The area under the curve (AUC) of ANN was the highest for both stress defect and ischemia; in particular, the ANN of ischemia showed significantly higher AUC than Observer A (p = 0.005).",0
+30302633,10,"The ANN of stress defect showed higher specificity compared with two observers, while the ANN of ischemia showed higher sensitivity.",0
+30302633,11,"Consequently, the accuracy of ANN showed the highest in this study.",0
+30302633,12,The ANN-based regional diagnosis showed a high concordance rate with the gold standard and comparable or even higher than the interpretation by nuclear medicine physicians.,0
+26886969,1,Convolutional neural networks (CNNs) are deep learning network architectures that have pushed forward the state-of-the-art in a range of computer vision applications and are increasingly popular in medical image analysis.,0
+26886969,2,"However, training of CNNs is time-consuming and challenging.",0
+26886969,3,"In medical image analysis tasks, the majority of training examples are easy to classify and therefore contribute little to the CNN learning process.",0
+26886969,4,"In this paper, we propose a method to improve and speed-up the CNN training for medical image analysis tasks by dynamically selecting misclassified negative samples during training.",0
+26886969,5,Training samples are heuristically sampled based on classification by the current status of the CNN.,0
+26886969,6,Weights are assigned to the training samples and informative samples are more likely to be included in the next CNN training iteration.,0
+26886969,7,We evaluated and compared our proposed method by training a CNN with (SeS) and without (NSeS) the selective sampling method.,0
+26886969,8,We focus on the detection of hemorrhages in color fundus images.,0
+26886969,9,A decreased training time from 170 epochs to 60 epochs with an increased performance-on par with two human experts-was achieved with areas under the receiver operating characteristics curve of 0.894 and 0.972 on two data sets.,0
+26886969,10,The SeS CNN statistically outperformed the NSeS CNN on an independent test set.,0
+30232049,1,"Based on international diagnostic guidelines, high-resolution CT plays a central part in the diagnosis of fibrotic lung disease.",0
+30232049,2,"In the correct clinical context, when high-resolution CT appearances are those of usual interstitial pneumonia, a diagnosis of idiopathic pulmonary fibrosis can be made without surgical lung biopsy.",0
+30232049,3,We investigated the use of a deep learning algorithm for provision of automated classification of fibrotic lung disease on high-resolution CT according to criteria specified in two international diagnostic guideline statements: the 2011 American Thoracic Society (ATS)/European Respiratory Society (ERS)/Japanese Respiratory Society (JRS)/Latin American Thoracic Association (ALAT) guidelines for diagnosis and management of idiopathic pulmonary fibrosis and the Fleischner Society diagnostic criteria for idiopathic pulmonary fibrosis.,0
+30232049,4,"In this case-cohort study, for algorithm development and testing, a database of 1157 anonymised high-resolution CT scans showing evidence of diffuse fibrotic lung disease was generated from two institutions.",0
+30232049,5,"We separated the scans into three non-overlapping cohorts (training set, n=929; validation set, n=89; and test set A, n=139) and classified them using 2011 ATS/ERS/JRS/ALAT idiopathic pulmonary fibrosis diagnostic guidelines.",0
+30232049,6,"For each scan, the lungs were segmented and resampled to create a maximum of 500 unique four slice combinations, which we converted into image montages.",0
+30232049,7,The final training dataset consisted of 420 096 unique montages for algorithm training.,0
+30232049,8,"We evaluated algorithm performance, reported as accuracy, prognostic accuracy, and weighted κcoefficient (κw) of interobserver agreement, on test set A and a cohort of 150 high-resolution CT scans (test set B) with fibrotic lung disease compared with the majority vote of 91 specialist thoracic radiologists drawn from multiple international thoracic imaging societies.",0
+30232049,9,We then reclassified high-resolution CT scans according to Fleischner Society diagnostic criteria for idiopathic pulmonary fibrosis.,0
+30232049,10,We retrained the algorithm using these criteria and evaluated its performance on 75 fibrotic lung disease specific high-resolution CT scans compared with four specialist thoracic radiologists using weighted κ coefficient of interobserver agreement.,0
+30232049,11,"|The accuracy of the algorithm on test set A was 76.4%, with 92.7% of diagnoses within one category.",0
+30232049,12,The algorithm took 2.31 s to evaluate 150 four slice montages (each montage representing a single case from test set B).,0
+30232049,13,"The median accuracy of the thoracic radiologists on test set B was 70.7% (IQR 65.3-74.7), and the accuracy of the algorithm was 73.3% (93.3% were within one category), outperforming 60 (66%) of 91 thoracic radiologists.",0
+30232049,14,Median interobserver agreement between each of the thoracic radiologists and the radiologist's majority opinion was good (κw=0.67 [IQR 0.58-0.72]).,0
+30232049,15,"Interobserver agreement between the algorithm and the radiologist's majority opinion was good (κw=0.69), outperforming 56 (62%) of 91 thoracic radiologists.",0
+30232049,16,"The algorithm provided equally prognostic discrimination between usual interstitial pneumonia and non-usual interstitial pneumonia diagnoses (hazard ratio 2.88, 95% CI 1.79-4.61, p<0.0001) compared with the majority opinion of the thoracic radiologists (2.74, 1.67-4.48, p<0.0001).",0
+30232049,17,"For Fleischner Society high-resolution CT criteria for usual interstitial pneumonia, median interobserver agreement between the radiologists was moderate (κw=0.56 [IQR 0.55-0.58]), but was good between the algorithm and the radiologists (κw=0.64 [0.55-0.72]).",1
+30232049,18,"High-resolution CT evaluation by a deep learning algorithm might provide low-cost, reproducible, near-instantaneous classification of fibrotic lung disease with human-level accuracy.",1
+30232049,19,"These methods could be of benefit to centres at which thoracic imaging expertise is scarce, as well as for stratification of patients in clinical trials.",1
+30232049,20,None.,0
+30996009,1,Computed tomography (CT) is essential for pulmonary nodule detection in diagnosing lung cancer.,0
+30996009,2,"As deep learning algorithms have recently been regarded as a promising technique in medical fields, we attempt to integrate a well-trained deep learning algorithm to detect and classify pulmonary nodules derived from clinical CT images.",0
+30996009,3,Open-source data sets and multicenter data sets have been used in this study.,0
+30996009,4,A three-dimensional convolutional neural network (CNN) was designed to detect pulmonary nodules and classify them into malignant or benign diseases based on pathologically and laboratory proven results.,0
+30996009,5,"The sensitivity and specificity of this well-trained model were found to be 84.4% (95% confidence interval [CI], 80.5%-88.3%) and 83.0% (95% CI, 79.5%-86.5%), respectively.",0
+30996009,6,"Subgroup analysis of smaller nodules (<10 mm) have demonstrated remarkable sensitivity and specificity, similar to that of larger nodules (10-30 mm).",0
+30996009,7,Additional model validation was implemented by comparing manual assessments done by different ranks of doctors with those performed by three-dimensional CNN.,0
+30996009,8,The results show that the performance of the CNN model was superior to manual assessment.,0
+30996009,9,"Under the companion diagnostics, the three-dimensional CNN with a deep learning algorithm may assist radiologists in the future by providing accurate and timely information for diagnosing pulmonary nodules in regular clinical practices.",1
+30996009,10,The three-dimensional convolutional neural network described in this article demonstrated both high sensitivity and high specificity in classifying pulmonary nodules regardless of diameters as well as superiority compared with manual assessment.,0
+30996009,11,"Although it still warrants further improvement and validation in larger screening cohorts, its clinical application could definitely facilitate and assist doctors in clinical practice.",1
+30407743,1,"To evaluate the accuracy of deep convolutional neural networks (DCNNs) for detecting neck of femur (NoF) fractures on radiographs, in comparison with perceptual training in medically-naïve individuals.",0
+30407743,2,This study extends a previous study that conducted perceptual training in medically-naïve individuals for the detection of NoF fractures on a variety of dataset sizes.,0
+30407743,3,The same anteroposterior hip radiograph dataset was used to train two DCNNs (AlexNet and GoogLeNet) to detect NoF fractures.,0
+30407743,4,"For direct comparison with perceptual training results, deep learning was completed across a variety of dataset sizes (200, 320 and 640 images) with images split into training (80%) and validation (20%).",0
+30407743,5,An additional 160 images were used as the final test set.,0
+30407743,6,Multiple pre-processing and augmentation techniques were utilised.,0
+30407743,7,AlexNet and GoogLeNet DCNNs NoF fracture detection accuracy increased with larger training dataset sizes and mildly with augmentation.,1
+30407743,8,Accuracy increased from 81.9% and 88.1% to 89.4% and 94.4% for AlexNet and GoogLeNet respectively.,0
+30407743,9,"Similarly, the test accuracy for the perceptual training in top-performing medically-naïve individuals increased from 87.6% to 90.5% when trained on 640 images compared with 200 images.",0
+30407743,10,Single detection tasks in radiology are commonly used in DCNN research with their results often used to make broader claims about machine learning being able to perform as well as subspecialty radiologists.,0
+30407743,11,"This study suggests that as impressive as recognising fractures is for a DCNN, similar learning can be achieved by top-performing medically-naïve humans with less than 1 hour of perceptual training.",1
+31110349,1,"With an estimated 160,000 deaths in 2018, lung cancer is the most common cause of cancer death in the United States1.",0
+31110349,2,Lung cancer screening using low-dose computed tomography has been shown to reduce mortality by 20-43% and is now included in US screening guidelines1-6.,0
+31110349,3,Existing challenges include inter-grader variability and high false-positive and false-negative rates7-10.,0
+31110349,4,We propose a deep learning algorithm that uses a patient's current and prior computed tomography volumes to predict the risk of lung cancer.,0
+31110349,5,"Our model achieves a state-of-the-art performance (94.4% area under the curve) on 6,716 National Lung Cancer Screening Trial cases, and performs similarly on an independent clinical validation set of 1,139 cases.",0
+31110349,6,We conducted two reader studies.,0
+31110349,7,"When prior computed tomography imaging was not available, our model outperformed all six radiologists with absolute reductions of 11% in false positives and 5% in false negatives.",0
+31110349,8,"Where prior computed tomography imaging was available, the model performance was on-par with the same radiologists.",0
+31110349,9,This creates an opportunity to optimize the screening process via computer assistance and automation.,0
+31110349,10,"While the vast majority of patients remain unscreened, we show the potential for deep learning models to increase the accuracy, consistency and adoption of lung cancer screening worldwide.",0
+30497907,1,"Although the deep learning system has been applied to interpretation of medical images, its application to the diagnosis of cervical lymph nodes in patients with oral cancer has not yet been reported.",0
+30497907,2,The purpose of this study was to evaluate the performance of deep learning image classification for diagnosis of lymph node metastasis.,0
+30497907,3,The imaging data used for evaluation consisted of computed tomography (CT) images of 127 histologically proven positive cervical lymph nodes and 314 histologically proven negative lymph nodes from 45 patients with oral squamous cell carcinoma.,0
+30497907,4,The performance of a deep learning image classification system for the diagnosis of lymph node metastasis on CT images was compared with the diagnostic interpretations of 2 experienced radiologists by using the Mann-Whitney U test and χ2 analysis.,0
+30497907,5,"The performance of the deep learning image classification system resulted in accuracy of 78.2%, sensitivity of 75.4%, specificity of 81.0%, positive predictive value of 79.9%, negative predictive value of 77.1%, and area under the receiver operating characteristic curve of 0.80.",0
+30497907,6,These values were not significantly different from those found by the radiologists.,0
+30497907,7,"The deep learning system yielded diagnostic results similar to those of the radiologists, which suggests that this system may be valuable for diagnostic support.",1
+29215311,8,"Evaluation time for the test data set were 3.7 s (DLS) and 28, 22 and 25 min for human readers (decreasing experience).",0
+29215311,9,"Receiver operating characteristic analysis revealed non-significant differences (p-values 0.45-0.47) in the area under the curve of 0.84 (DLS), 0.88 (experienced and intermediate readers) and 0.79 (inexperienced reader).",0
+29215311,12,Advances in knowledge: DLS can be trained classify cancer on breast ultrasound images high accuracy even with comparably few training cases.,0
+29215311,13,The fast evaluation speed makes real-time image analysis feasible.,0
+30481176,1,Magnetic resonance imaging (MRI) of the knee is the preferred method for diagnosing knee injuries.,0
+30481176,2,"However, interpretation of knee MRI is time-intensive and subject to diagnostic error and variability.",0
+30481176,3,An automated system for interpreting knee MRI could prioritize high-risk patients and assist clinicians in making diagnoses.,1
+30481176,4,"Deep learning methods, in being able to automatically learn layers of features, are well suited for modeling the complex relationships between medical images and their interpretations.",0
+30481176,5,In this study we developed a deep learning model for detecting general abnormalities and specific diagnoses (anterior cruciate ligament [ACL] tears and meniscal tears) on knee MRI exams.,0
+30481176,6,We then measured the effect of providing the model's predictions to clinical experts during interpretation.,0
+30481176,7,"Our dataset consisted of 1,370 knee MRI exams performed at Stanford University Medical Center between January 1, 2001, and December 31, 2012 (mean age 38.0 years; 569 [41.5%] female patients).",0
+30481176,8,The majority vote of 3 musculoskeletal radiologists established reference standard labels on an internal validation set of 120 exams.,0
+30481176,9,"We developed MRNet, a convolutional neural network for classifying MRI series and combined predictions from 3 series per exam using logistic regression.",0
+30481176,10,"In detecting abnormalities, ACL tears, and meniscal tears, this model achieved area under the receiver operating characteristic curve (AUC) values of 0.937 (95% CI 0.895, 0.980), 0.965 (95% CI 0.938, 0.993), and 0.847 (95% CI 0.780, 0.914), respectively, on the internal validation set.",0
+30481176,11,"We also obtained a public dataset of 917 exams with sagittal T1-weighted series and labels for ACL injury from Clinical Hospital Centre Rijeka, Croatia.",0
+30481176,12,"On the external validation set of 183 exams, the MRNet trained on Stanford sagittal T2-weighted series achieved an AUC of 0.824 (95% CI 0.757, 0.892) in the detection of ACL injuries with no additional training, while an MRNet trained on the rest of the external data achieved an AUC of 0.911 (95% CI 0.864, 0.958).",0
+30481176,13,"We additionally measured the specificity, sensitivity, and accuracy of 9 clinical experts (7 board-certified general radiologists and 2 orthopedic surgeons) on the internal validation set both with and without model assistance.",0
+30481176,14,"Using a 2-sided Pearson's chi-squared test with adjustment for multiple comparisons, we found no significant differences between the performance of the model and that of unassisted general radiologists in detecting abnormalities.",0
+30481176,15,General radiologists achieved significantly higher sensitivity in detecting ACL tears (p-value = 0.002; q-value = 0.019) and significantly higher specificity in detecting meniscal tears (p-value = 0.003; q-value = 0.019).,1
+30481176,16,"Using a 1-tailed t test on the change in performance metrics, we found that providing model predictions significantly increased clinical experts' specificity in identifying ACL tears (p-value < 0.001; q-value = 0.006).",0
+30481176,17,The primary limitations of our study include lack of surgical ground truth and the small size of the panel of clinical experts.,0
+30481176,18,Our deep learning model can rapidly generate accurate clinical pathology classifications of knee MRI exams from both internal and external datasets.,0
+30481176,19,"Moreover, our results support the assertion that deep learning models can improve the performance of clinical experts during medical imaging interpretation.",0
+30481176,20,Further research is needed to validate the model prospectively and to determine its utility in the clinical setting.,0
+28167406,1,"When left untreated, age-related macular degeneration (AMD) is the leading cause of vision loss in people over fifty in the US.",0
+28167406,2,Currently it is estimated that about eight million US individuals have the intermediate stage of AMD that is often asymptomatic with regard to visual deficit.,0
+28167406,3,These individuals are at high risk for progressing to the advanced stage where the often treatable choroidal neovascular form of AMD can occur.,0
+28167406,4,"Careful monitoring to detect the onset and prompt treatment of the neovascular form as well as dietary supplementation can reduce the risk of vision loss from AMD, therefore, preferred practice patterns recommend identifying individuals with the intermediate stage in a timely manner.",0
+28167406,5,Past automated retinal image analysis (ARIA) methods applied on fundus imagery have relied on engineered and hand-designed visual features.,0
+28167406,6,We instead detail the novel application of a machine learning approach using deep learning for the problem of ARIA and AMD analysis.,0
+28167406,7,We use transfer learning and universal features derived from deep convolutional neural networks (DCNN).,0
+28167406,8,"We address clinically relevant 4-class, 3-class, and 2-class AMD severity classification problems.",0
+28167406,9,"Using 5664 color fundus images from the NIH AREDS dataset and DCNN universal features, we obtain values for accuracy for the (4-, 3-, 2-) class classification problem of (79.4%, 81.5%, 93.4%) for machine vs. (75.8%, 85.0%, 95.2%) for physician grading.",0
+28167406,10,This study demonstrates the efficacy of machine grading based on deep universal features/transfer learning when applied to ARIA and is a promising step in providing a pre-screener to identify individuals with intermediate AMD and also as a tool that can facilitate identifying such individuals for clinical studies aimed at developing improved therapies.,0
+28167406,11,It also demonstrates comparable performance between computer and physician grading.,0
+30242349,1,"Although deep learning (DL) can identify the intermediate or advanced stages of age-related macular degeneration (AMD) as a binary yes or no, stratified gradings using the more granular Age-Related Eye Disease Study (AREDS) 9-step detailed severity scale for AMD provide more precise estimation of 5-year progression to advanced stages.",0
+30242349,2,"The AREDS 9-step detailed scale's complexity and implementation solely with highly trained fundus photograph graders potentially hampered its clinical use, warranting development and use of an alternate AREDS simple scale, which although valuable, has less predictive ability.",1
+30242349,3,To describe DL techniques for the AREDS 9-step detailed severity scale for AMD to estimate 5-year risk probability with reasonable accuracy.,0
+30242349,4,"This study used data collected from November 13, 1992, to November 30, 2005, from 4613 study participants of the AREDS data set to develop deep convolutional neural networks that were trained to provide detailed automated AMD grading on several AMD severity classification scales, using a multiclass classification setting.",0
+30242349,5,"Two AMD severity classification problems using criteria based on 4-step (AMD-1, AMD-2, AMD-3, and AMD-4 from classifications developed for AREDS eligibility criteria) and 9-step (from AREDS detailed severity scale) AMD severity scales were investigated.",0
+30242349,6,The performance of these algorithms was compared with a contemporary human grader and against a criterion standard (fundus photograph reading center graders) used at the time of AREDS enrollment and follow-up.,0
+30242349,7,"Three methods for estimating 5-year risk were developed, including one based on DL regression.",0
+30242349,8,"Data were analyzed from December 1, 2017, through April 15, 2018.",0
+30242349,9,Weighted κ scores and mean unsigned errors for estimating 5-year risk probability of progression to advanced AMD.,0
+30242349,10,|This study used 67 401 color fundus images from the 4613 study participants.,0
+30242349,11,The weighted κ scores were 0.77 for the 4-step and 0.74 for the 9-step AMD severity scales.,0
+30242349,12,The overall mean estimation error for the 5-year risk ranged from 3.5% to 5.3%.,0
+30242349,13,"These findings suggest that DL AMD grading has, for the 4-step classification evaluation, performance comparable with that of humans and achieves promising results for providing AMD detailed severity grading (9-step classification), which normally requires highly trained graders, and for estimating 5-year risk of progression to advanced AMD.",1
+30242349,14,"Use of DL has the potential to assist physicians in longitudinal care for individualized, detailed risk assessment as well as clinical studies of disease progression during treatment or as public screening or monitoring worldwide.",1
+30835218,1,Multi-parametric MRI (mp-MRI) is considered the best non-invasive imaging modality for diagnosing prostate cancer (PCa).,0
+30835218,2,"However, mp-MRI for PCa diagnosis is currently limited by the qualitative or semi-quantitative interpretation criteria, leading to inter-reader variability and a suboptimal ability to assess lesion aggressiveness.",0
+30835218,3,"Convolutional neural networks (CNNs) are a powerful method to automatically learn the discriminative features for various tasks, including cancer detection.",0
+30835218,4,"We propose a novel multi-class CNN, FocalNet, to jointly detect PCa lesions and predict their aggressiveness using Gleason score (GS).",0
+30835218,5,FocalNet characterizes lesion aggressiveness and fully utilizes distinctive knowledge from mp-MRI.,0
+30835218,6,We collected a prostate mp-MRI dataset from 417 patients who underwent 3T mp-MRI exams prior to robotic-assisted laparoscopic prostatectomy.,0
+30835218,7,FocalNet was trained and evaluated in this large study cohort with fivefold cross validation.,0
+30835218,8,"In the free-response receiver operating characteristics (FROC) analysis for lesion detection, FocalNet achieved 89.7% and 87.9% sensitivity for index lesions and clinically significant lesions at one false positive per patient, respectively.",0
+30835218,9,"For the GS classification, evaluated by the receiver operating characteristics (ROC) analysis, FocalNet received the area under the curve of 0.81 and 0.79 for the classifications of clinically significant PCa (GS ≥ 3 + 4) and PCa with GS ≥ 4 + 3, respectively.",0
+30835218,10,"With the comparison to the prospective performance of radiologists using the current diagnostic guideline, FocalNet demonstrated comparable detection sensitivity for index lesions and clinically significant lesions, only 3.4% and 1.5% lower than highly experienced radiologists without statistical significance.",1
+30224757,1,"Visual inspection of histopathology slides is one of the main methods used by pathologists to assess the stage, type and subtype of lung tumors.",0
+30224757,2,"Adenocarcinoma (LUAD) and squamous cell carcinoma (LUSC) are the most prevalent subtypes of lung cancer, and their distinction requires visual inspection by an experienced pathologist.",0
+30224757,3,"In this study, we trained a deep convolutional neural network (inception v3) on whole-slide images obtained from The Cancer Genome Atlas to accurately and automatically classify them into LUAD, LUSC or normal lung tissue.",0
+30224757,4,"The performance of our method is comparable to that of pathologists, with an average area under the curve (AUC) of 0.97.",0
+30224757,5,"Our model was validated on independent datasets of frozen tissues, formalin-fixed paraffin-embedded tissues and biopsies.",0
+30224757,6,"Furthermore, we trained the network to predict the ten most commonly mutated genes in LUAD.",0
+30224757,7,"We found that six of them-STK11, EGFR, FAT1, SETBP1, KRAS and TP53-can be predicted from pathology images, with AUCs from 0.733 to 0.856 as measured on a held-out population.",0
+30224757,8,These findings suggest that deep-learning models can assist pathologists in the detection of cancer subtype or gene mutations.,1
+30224757,9,"Our approach can be applied to any cancer type, and the code is available at https://github.com/ncoudray/DeepPATH .",0
+30104768,1,The volume and complexity of diagnostic imaging is increasing at a pace faster than the availability of human expertise to interpret it.,0
+30104768,2,Artificial intelligence has shown great promise in classifying two-dimensional photographs of some common diseases and typically relies on databases of millions of annotated images.,0
+30104768,3,"Until now, the challenge of reaching the performance of expert clinicians in a real-world clinical pathway with three-dimensional diagnostic scans has remained unsolved.",0
+30104768,4,"Here, we apply a novel deep learning architecture to a clinically heterogeneous set of three-dimensional optical coherence tomography scans from patients referred to a major eye hospital.",0
+30104768,5,"We demonstrate performance in making a referral recommendation that reaches or exceeds that of experts on a range of sight-threatening retinal diseases after training on only 14,884 scans.",0
+30104768,6,"Moreover, we demonstrate that the tissue segmentations produced by our architecture act as a device-independent representation; referral accuracy is maintained when using tissue segmentations from a different type of device.",0
+30104768,7,Our work removes previous barriers to wider clinical use without prohibitive training data requirements across multiple pathologies in a real-world setting.,0
+30422093,1,Purpose To assess the ability of convolutional neural networks (CNNs) to enable high-performance automated binary classification of chest radiographs.,0
+30422093,2,"Materials and Methods In a retrospective study, 216 431 frontal chest radiographs obtained between 1998 and 2012 were procured, along with associated text reports and a prospective label from the attending radiologist.",0
+30422093,3,This data set was used to train CNNs to classify chest radiographs as normal or abnormal before evaluation on a held-out set of 533 images hand-labeled by expert radiologists.,0
+30422093,4,"The effects of development set size, training set size, initialization strategy, and network architecture on end performance were assessed by using standard binary classification metrics; detailed error analysis, including visualization of CNN activations, was also performed.",0
+30422093,5,Results Average area under the receiver operating characteristic curve (AUC) was 0.96 for a CNN trained with 200 000 images.,0
+30422093,6,"This AUC value was greater than that observed when the same model was trained with 2000 images (AUC = 0.84, P < .005) but was not significantly different from that observed when the model was trained with 20 000 images (AUC = 0.95, P > .05).",0
+30422093,7,"Averaging the CNN output score with the binary prospective label yielded the best-performing classifier, with an AUC of 0.98 (P < .005).",0
+30422093,8,Analysis of specific radiographs revealed that the model was heavily influenced by clinically relevant spatial regions but did not reliably generalize beyond thoracic disease.,0
+30422093,9,Conclusion CNNs trained with a modestly sized collection of prospectively labeled chest radiographs achieved high diagnostic performance in the classification of chest radiographs as normal or abnormal; this function may be useful for automated prioritization of abnormal chest radiographs.,1
+30422093,10,"RSNA, 2018 Online supplemental material is available for this article.",0
+30422093,11,See also the editorial by van Ginneken in this issue.,0
+29234806,1,Application of deep learning algorithms to whole-slide pathology images can potentially improve diagnostic accuracy and efficiency.,1
+29234806,2,Assess the performance of automated deep learning algorithms at detecting metastases in hematoxylin and eosin-stained tissue sections of lymph nodes of women with breast cancer and compare it with pathologists' diagnoses in a diagnostic setting.,0
+29234806,3,Researcher challenge competition (CAMELYON16) to develop automated solutions for detecting lymph node metastases (November 2015-November 2016).,0
+29234806,4,A training data set of whole-slide images from 2 centers in the Netherlands with (n = 110) and without (n = 160) nodal metastases verified by immunohistochemical staining were provided to challenge participants to build algorithms.,0
+29234806,5,Algorithm performance was evaluated in an independent test set of 129 whole-slide images (49 with and 80 without metastases).,0
+29234806,6,"The same test set of corresponding glass slides was also evaluated by a panel of 11 pathologists with time constraint (WTC) from the Netherlands to ascertain likelihood of nodal metastases for each slide in a flexible 2-hour session, simulating routine pathology workflow, and by 1 pathologist without time constraint (WOTC).",0
+29234806,7,Deep learning algorithms submitted as part of a challenge competition or pathologist interpretation.,0
+29234806,8,The presence of specific metastatic foci and the absence vs presence of lymph node metastasis in a slide or image using receiver operating characteristic curve analysis.,0
+29234806,9,"The 11 pathologists participating in the simulation exercise rated their diagnostic confidence as definitely normal, probably normal, equivocal, probably tumor, or definitely tumor.",0
+29234806,10,The area under the receiver operating characteristic curve (AUC) for the algorithms ranged from 0.556 to 0.994.,0
+29234806,11,"The top-performing algorithm achieved a lesion-level, true-positive fraction comparable with that of the pathologist WOTC (72.4% [95% CI, 64.3%-80.4%]) at a mean of 0.0125 false-positives per normal whole-slide image.",0
+29234806,12,"For the whole-slide image classification task, the best algorithm (AUC, 0.994 [95% CI, 0.983-0.999]) performed significantly better than the pathologists WTC in a diagnostic simulation (mean AUC, 0.810 [range, 0.738-0.884]; P < .001).",0
+29234806,13,"The top 5 algorithms had a mean AUC that was comparable with the pathologist interpreting the slides in the absence of time constraints (mean AUC, 0.960 [range, 0.923-0.994] for the top 5 algorithms vs 0.966 [95% CI, 0.927-0.998] for the pathologist WOTC).",0
+29234806,14,"In the setting of a challenge competition, some deep learning algorithms achieved better diagnostic performance than a panel of 11 pathologists participating in a simulation exercise designed to mimic routine pathology workflow; algorithm performance was comparable with an expert pathologist interpreting whole-slide images without time constraints.",0
+29234806,15,Whether this approach has clinical utility will require evaluation in a clinical setting.,0
+28117445,1,"Skin cancer, the most common human malignancy, is primarily diagnosed visually, beginning with an initial clinical screening and followed potentially by dermoscopic analysis, a biopsy and histopathological examination.",0
+28117445,2,Automated classification of skin lesions using images is a challenging task owing to the fine-grained variability in the appearance of skin lesions.,0
+28117445,3,Deep convolutional neural networks (CNNs) show potential for general and highly variable tasks across many fine-grained object categories.,0
+28117445,4,"Here we demonstrate classification of skin lesions using a single CNN, trained end-to-end from images directly, using only pixels and disease labels as inputs.",0
+28117445,5,"We train a CNN using a dataset of 129,450 clinical images-two orders of magnitude larger than previous datasets-consisting of 2,032 different diseases.",0
+28117445,6,We test its performance against 21 board-certified dermatologists on biopsy-proven clinical images with two critical binary classification use cases: keratinocyte carcinomas versus benign seborrheic keratoses; and malignant melanomas versus benign nevi.,0
+28117445,7,"The first case represents the identification of the most common cancers, the second represents the identification of the deadliest skin cancer.",0
+28117445,8,"The CNN achieves performance on par with all tested experts across both tasks, demonstrating an artificial intelligence capable of classifying skin cancer with a level of competence comparable to dermatologists.",0
+28117445,9,"Outfitted with deep neural networks, mobile devices can potentially extend the reach of dermatologists outside of the clinic.",1
+28117445,10,It is projected that 6.3 billion smartphone subscriptions will exist by the year 2021 (ref. 13) and can therefore potentially provide low-cost universal access to vital diagnostic care.,0
+30888570,1,We aimed to use deep learning with convolutional neural network (CNN) to discriminate between benign and malignant breast mass images from ultrasound.,0
+30888570,2,We retrospectively gathered 480 images of 96 benign masses and 467 images of 144 malignant masses for training data.,0
+30888570,3,"Deep learning model was constructed using CNN architecture GoogLeNet and analyzed test data: 48 benign masses, 72 malignant masses.",0
+30888570,4,Three radiologists interpreted these test data.,0
+30888570,5,"Sensitivity, specificity, accuracy, and area under the receiver operating characteristic curve (AUC) were calculated.",0
+30888570,6,"The CNN model and radiologists had a sensitivity of 0.958 and 0.583-0.917, specificity of 0.925 and 0.604-0.771, and accuracy of 0.925 and 0.658-0.792, respectively.",0
+30888570,7,"The CNN model had equal or better diagnostic performance compared to radiologists (AUC = 0.913 and 0.728-0.845, p = 0.01-0.14).",0
+30888570,8,Deep learning with CNN shows high diagnostic performance to discriminate between benign and malignant breast masses on ultrasound.,0
+29953582,1,"Application of deep-learning technology to skin cancer classification can potentially improve the sensitivity and specificity of skin cancer screening, but the number of training images required for such a system is thought to be extremely large.",1
+29953582,2,To determine whether deep-learning technology could be used to develop an efficient skin cancer classification system with a relatively small dataset of clinical images.,0
+29953582,3,A deep convolutional neural network (DCNN) was trained using a dataset of 4867 clinical images obtained from 1842 patients diagnosed with skin tumours at the University of Tsukuba Hospital from 2003 to 2016.,0
+29953582,4,"The images consisted of 14 diagnoses, including both malignant and benign conditions.",0
+29953582,5,Its performance was tested against 13 board-certified dermatologists and nine dermatology trainees.,0
+29953582,6,The overall classification accuracy of the trained DCNN was 76.5%.,0
+29953582,7,The DCNN achieved 96.3% sensitivity (correctly classified malignant as malignant) and 89.5% specificity (correctly classified benign as benign).,0
+29953582,8,"Although the accuracy of malignant or benign classification by the board-certified dermatologists was statistically higher than that of the dermatology trainees (85.3% ± 3.7% and 74.4% ± 6.8%, P < 0.01), the DCNN achieved even greater accuracy, as high as 92.4% ± 2.1% (P < 0.001).",0
+29953582,9,We have developed an efficient skin tumour classifier using a DCNN trained on a relatively small dataset.,0
+29953582,10,The DCNN classified images of skin tumours more accurately than board-certified dermatologists.,0
+29953582,11,"Collectively, the current system may have capabilities for screening purposes in general medical practice, particularly because it requires only a single clinical image for classification.",1
+30800522,1,Glaucoma detection in color fundus images is a challenging task that requires expertise and years of practice.,0
+30800522,2,"In this study we exploited the application of different Convolutional Neural Networks (CNN) schemes to show the influence in the performance of relevant factors like the data set size, the architecture and the use of transfer learning vs newly defined architectures.",0
+30800522,3,We also compared the performance of the CNN based system with respect to human evaluators and explored the influence of the integration of images and data collected from the clinical history of the patients.,0
+30800522,4,We accomplished the best performance using a transfer learning scheme with VGG19 achieving an AUC of 0.94 with sensitivity and specificity ratios similar to the expert evaluators of the study.,0
+30800522,5,The experimental results using three different data sets with 2313 images indicate that this solution can be a valuable option for the design of a computer aid system for the detection of glaucoma in large-scale screening programs.,1
+29846502,1,"Deep learning convolutional neural networks (CNN) may facilitate melanoma detection, but data comparing a CNN's diagnostic performance to larger groups of dermatologists are lacking.",1
+29846502,2,Google's Inception v4 CNN architecture was trained and validated using dermoscopic images and corresponding diagnoses.,0
+29846502,3,In a comparative cross-sectional reader study a 100-image test-set was used (level-I: dermoscopy only; level-II: dermoscopy plus clinical information and images).,0
+29846502,4,"Main outcome measures were sensitivity, specificity and area under the curve (AUC) of receiver operating characteristics (ROC) for diagnostic classification (dichotomous) of lesions by the CNN versus an international group of 58 dermatologists during level-I or -II of the reader study.",0
+29846502,5,Secondary end points included the dermatologists' diagnostic performance in their management decisions and differences in the diagnostic performance of dermatologists during level-I and -II of the reader study.,0
+29846502,6,"Additionally, the CNN's performance was compared with the top-five algorithms of the 2016 International Symposium on Biomedical Imaging (ISBI) challenge.",0
+29846502,7,"|In level-I dermatologists achieved a mean (±standard deviation) sensitivity and specificity for lesion classification of 86.6% (±9.3%) and 71.3% (±11.2%), respectively.",0
+29846502,8,"More clinical information (level-II) improved the sensitivity to 88.9% (±9.6%, P = 0.19) and specificity to 75.7% (±11.7%, P < 0.05).",0
+29846502,9,"The CNN ROC curve revealed a higher specificity of 82.5% when compared with dermatologists in level-I (71.3%, P < 0.01) and level-II (75.7%, P < 0.01) at their sensitivities of 86.6% and 88.9%, respectively.",0
+29846502,10,"The CNN ROC AUC was greater than the mean ROC area of dermatologists (0.86 versus 0.79, P < 0.01).",0
+29846502,11,The CNN scored results close to the top three algorithms of the ISBI 2016 challenge.,0
+29846502,12,"For the first time we compared a CNN's diagnostic performance with a large international group of 58 dermatologists, including 30 experts.",0
+29846502,13,Most dermatologists were outperformed by the CNN.,0
+29846502,14,"Irrespective of any physicians' experience, they may benefit from assistance by a CNN's image classification.",1
+29846502,15,This study was registered at the German Clinical Trial Register (DRKS-Study-ID: DRKS00013570; https://www.drks.de/drks_web/).,0
+31016442,1,To develop and validate a proof-of-concept convolutional neural network (CNN)-based deep learning system (DLS) that classifies common hepatic lesions on multi-phasic MRI.,0
+31016442,2,"A custom CNN was engineered by iteratively optimizing the network architecture and training cases, finally consisting of three convolutional layers with associated rectified linear units, two maximum pooling layers, and two fully connected layers.",0
+31016442,3,"Four hundred ninety-four hepatic lesions with typical imaging features from six categories were utilized, divided into training (n = 434) and test (n = 60) sets.",0
+31016442,4,"Established augmentation techniques were used to generate 43,400 training samples.",0
+31016442,5,An Adam optimizer was used for training.,0
+31016442,6,Monte Carlo cross-validation was performed.,0
+31016442,7,"After model engineering was finalized, classification accuracy for the final CNN was compared with two board-certified radiologists on an identical unseen test set.",0
+31016442,8,"The DLS demonstrated a 92% accuracy, a 92% sensitivity (Sn), and a 98% specificity (Sp).",0
+31016442,9,Test set performance in a single run of random unseen cases showed an average 90% Sn and 98% Sp.,0
+31016442,10,The average Sn/Sp on these same cases for radiologists was 82.5%/96.5%.,0
+31016442,11,Results showed a 90% Sn for classifying hepatocellular carcinoma (HCC) compared to 60%/70% for radiologists.,0
+31016442,12,"For HCC classification, the true positive and false positive rates were 93.5% and 1.6%, respectively, with a receiver operating characteristic area under the curve of 0.992.",0
+31016442,13,Computation time per lesion was 5.6 ms.,0
+31016442,14,"This preliminary deep learning study demonstrated feasibility for classifying lesions with typical imaging features from six common hepatic lesion types, motivating future studies with larger multi-institutional datasets and more complex imaging appearances.",0
+31016442,15,"Deep learning demonstrates high performance in the classification of liver lesions on volumetric multi-phasic MRI, showing potential as an eventual decision-support tool for radiologists.",1
+31016442,16,"Demonstrating a classification runtime of a few milliseconds per lesion, a deep learning system could be incorporated into the clinical workflow in a time-efficient manner.",1
+29352285,1,"Although there have been reports of the successful diagnosis of skin disorders using deep learning, unrealistically large clinical image datasets are required for artificial intelligence (AI) training.",0
+29352285,2,We created datasets of standardized nail images using a region-based convolutional neural network (R-CNN) trained to distinguish the nail from the background.,0
+29352285,3,"We used R-CNN to generate training datasets of 49,567 images, which we then used to fine-tune the ResNet-152 and VGG-19 models.",0
+29352285,4,"The validation datasets comprised 100 and 194 images from Inje University (B1 and B2 datasets, respectively), 125 images from Hallym University (C dataset), and 939 images from Seoul National University (D dataset).",0
+29352285,5,"The AI (ensemble model; ResNet-152 + VGG-19 + feedforward neural networks) results showed test sensitivity/specificity/ area under the curve values of (96.0 / 94.7 / 0.98), (82.7 / 96.7 / 0.95), (92.3 / 79.3 / 0.93), (87.7 / 69.3 / 0.82) for the B1, B2, C, and D datasets.",0
+29352285,6,"With a combination of the B1 and C datasets, the AI Youden index was significantly (p = 0.01) higher than that of 42 dermatologists doing the same assessment manually.",0
+29352285,7,"For B1+C and B2+ D dataset combinations, almost none of the dermatologists performed as well as the AI.",0
+29352285,8,"By training with a dataset comprising 49,567 images, we achieved a diagnostic accuracy for onychomycosis using deep learning that was superior to that of most of the dermatologists who participated in this study.",0
+30901052,1,"Interpretation of chest radiographs is a challenging task prone to errors, requiring expert readers.",0
+30901052,2,An automated system that can accurately classify chest radiographs may help streamline the clinical workflow.,0
+30901052,3,"To develop a deep learning-based algorithm that can classify normal and abnormal results from chest radiographs with major thoracic diseases including pulmonary malignant neoplasm, active tuberculosis, pneumonia, and pneumothorax and to validate the algorithm's performance using independent data sets.",0
+30901052,4,"This diagnostic study developed a deep learning-based algorithm using single-center data collected between November 1, 2016, and January 31, 2017.",0
+30901052,5,"The algorithm was externally validated with multicenter data collected between May 1 and July 31, 2018.",0
+30901052,6,"A total of 54 221 chest radiographs with normal findings from 47 917 individuals (21 556 men and 26 361 women; mean [SD] age, 51 [16] years) and 35 613 chest radiographs with abnormal findings from 14 102 individuals (8373 men and 5729 women; mean [SD] age, 62 [15] years) were used to develop the algorithm.",0
+30901052,7,"A total of 486 chest radiographs with normal results and 529 with abnormal results (1 from each participant; 628 men and 387 women; mean [SD] age, 53 [18] years) from 5 institutions were used for external validation.",0
+30901052,8,"Fifteen physicians, including nonradiology physicians, board-certified radiologists, and thoracic radiologists, participated in observer performance testing.",0
+30901052,9,Data were analyzed in August 2018.,0
+30901052,10,Deep learning-based algorithm.,0
+30901052,11,Image-wise classification performances measured by area under the receiver operating characteristic curve; lesion-wise localization performances measured by area under the alternative free-response receiver operating characteristic curve.,0
+30901052,12,The algorithm demonstrated a median (range) area under the curve of 0.979 (0.973-1.000) for image-wise classification and 0.972 (0.923-0.985) for lesion-wise localization; the algorithm demonstrated significantly higher performance than all 3 physician groups in both image-wise classification (0.983 vs 0.814-0.932; all P < .005) and lesion-wise localization (0.985 vs 0.781-0.907; all P < .001).,0
+30901052,13,Significant improvements in both image-wise classification (0.814-0.932 to 0.904-0.958; all P < .005) and lesion-wise localization (0.781-0.907 to 0.873-0.938; all P < .001) were observed in all 3 physician groups with assistance of the algorithm.,0
+30901052,14,"The algorithm consistently outperformed physicians, including thoracic radiologists, in the discrimination of chest radiographs with major thoracic diseases, demonstrating its potential to improve the quality and efficiency of clinical practice.",0
+29474911,1,The implementation of clinical-decision support algorithms for medical imaging faces challenges with reliability and interpretability.,0
+29474911,2,"Here, we establish a diagnostic tool based on a deep-learning framework for the screening of patients with common treatable blinding retinal diseases.",0
+29474911,3,"Our framework utilizes transfer learning, which trains a neural network with a fraction of the data of conventional approaches.",0
+29474911,4,"Applying this approach to a dataset of optical coherence tomography images, we demonstrate performance comparable to that of human experts in classifying age-related macular degeneration and diabetic macular edema.",0
+29474911,5,We also provide a more transparent and interpretable diagnosis by highlighting the regions recognized by the neural network.,0
+29474911,6,We further demonstrate the general applicability of our AI system for diagnosis of pediatric pneumonia using chest X-ray images.,0
+29474911,7,"This tool may ultimately aid in expediting the diagnosis and referral of these treatable conditions, thereby facilitating earlier treatment, resulting in improved clinical outcomes.",1
+29474911,8,VIDEO ABSTRACT.,0
+22270787,1,"To determine which Breast Imaging Reporting and Data System (BI-RADS) descriptors for ultrasound are predictors for breast cancer using logistic regression (LR) analysis in conjunction with interobserver variability between breast radiologists, and to compare the performance of artificial neural network (ANN) and LR models in differentiation of benign and malignant breast masses.",0
+22270787,2,Five breast radiologists retrospectively reviewed 140 breast masses and described each lesion using BI-RADS lexicon and categorized final assessments.,0
+22270787,3,Interobserver agreements between the observers were measured by kappa statistics.,0
+22270787,4,The radiologists' responses for BI-RADS were pooled.,0
+22270787,5,The data were divided randomly into train (n = 70) and test sets (n = 70).,0
+22270787,6,"Using train set, optimal independent variables were determined by using LR analysis with forward stepwise selection.",0
+22270787,7,The LR and ANN models were constructed with the optimal independent variables and the biopsy results as dependent variable.,0
+22270787,8,Performances of the models and radiologists were evaluated on the test set using receiver-operating characteristic (ROC) analysis.,0
+22270787,9,"Among BI-RADS descriptors, margin and boundary were determined as the predictors according to stepwise LR showing moderate interobserver agreement.",0
+22270787,10,"Area under the ROC curves (AUC) for both of LR and ANN were 0.87 (95% CI, 0.77-0.94).",0
+22270787,11,AUCs for the five radiologists ranged 0.79-0.91.,0
+22270787,12,"There was no significant difference in AUC values among the LR, ANN, and radiologists (p > 0.05).",0
+22270787,13,Margin and boundary were found as statistically significant predictors with good interobserver agreement.,0
+22270787,14,Use of the LR and ANN showed similar performance to that of the radiologists for differentiation of benign and malignant breast masses.,0
+30177857,1,"The purpose of this study was to evaluate the performance of the deep convolutional neural network (DCNN) in differentiating between tuberculous and pyogenic spondylitis on magnetic resonance (MR) imaging, compared to the performance of three skilled radiologists.",0
+30177857,2,This clinical retrospective study used spine MR images of 80 patients with tuberculous spondylitis and 81 patients with pyogenic spondylitis that was bacteriologically and/or histologically confirmed from January 2007 to December 2016.,0
+30177857,3,Supervised training and validation of the DCNN classifier was performed with four-fold cross validation on a patient-level independent split.,0
+30177857,4,The object detection and classification model was implemented as a DCNN and was designed to calculate the deep-learning scores of individual patients to reach a conclusion.,0
+30177857,5,Three musculoskeletal radiologists blindly interpreted the images.,0
+30177857,6,"The diagnostic performances of the DCNN classifier and of the three radiologists were expressed as receiver operating characteristic (ROC) curves, and the areas under the ROC curves (AUCs) were compared using a bootstrap resampling procedure.",0
+30177857,7,"When comparing the AUC value of the DCNN classifier (0.802) with the pooled AUC value of the three readers (0.729), there was no significant difference (P = 0.079).",0
+30177857,8,"In differentiating between tuberculous and pyogenic spondylitis using MR images, the performance of the DCNN classifier was comparable to that of three skilled radiologists.",0
+31075042,1,"This study estimated the diagnostic performance of a deep learning system for detection of Sjögren's syndrome (SjS) on CT, and compared it with the performance of radiologists.",0
+31075042,2,CT images were assessed from 25 patients confirmed to have SjS based on the both Japanese criteria and American-European Consensus Group criteria and 25 control subjects with no parotid gland abnormalities who were examined for other diseases.,0
+31075042,3,10 CT slices were obtained for each patient.,0
+31075042,4,"From among the total of 500 CT images, 400 images (200 from 20 SjS patients and 200 from 20 control subjects) were employed as the training data set and 100 images (50 from 5 SjS patients and 50 from 5 control subjects) were used as the test data set.",0
+31075042,5,The performance of a deep learning system for diagnosing SjS from the CT images was compared with the diagnoses made by six radiologists (three experienced and three inexperienced radiologists).,0
+31075042,6,"The accuracy, sensitivity, and specificity of the deep learning system were 96.0%, 100% and 92.0%, respectively.",0
+31075042,7,"The corresponding values of experienced radiologists were 98.3%, 99.3% and 97.3% being equivalent to the deep learning, while those of inexperienced radiologists were 83.5%, 77.9% and 89.2%.",0
+31075042,8,The area under the curve of inexperienced radiologists were significantly different from those of the deep learning system and the experienced radiologists.,0
+31075042,9,"The deep learning system showed a high diagnostic performance for SjS, suggesting that it could possibly be used for diagnostic support when interpreting CT images.",1
+30715773,1,We designed a deep convolutional neural network (CNN) to diagnose thyroid malignancy on ultrasound (US) and compared the diagnostic performance of CNN with that of experienced radiologists.,0
+30715773,2,"Between May 2012 and February 2015, 589 thyroid nodules in 519 patients were diagnosed as benign or malignant by surgical excision.",0
+30715773,3,Experienced radiologists retrospectively reviewed the US of the thyroid nodules in a test set.,0
+30715773,4,"CNNs were trained and tested using retrospective data of 439 and 150 US images, respectively.",0
+30715773,5,Diagnostic performances were compared between the two groups.,0
+30715773,6,"Of the 589 thyroid nodules, 396 were malignant and 193 were benign.",0
+30715773,7,The area under the curve (AUC) for diagnosing thyroid malignancy was 0.805-0.860 for radiologists.,0
+30715773,8,"The AUCs for diagnosing thyroid malignancy for the three CNNs were 0.845, 0.835, and 0.850.",0
+30715773,9,There was no significant difference in AUC between radiologists and CNNs.,0
+30715773,10,CNNs showed comparable diagnostic performance compared to experienced radiologists in differentiating thyroid malignancy on US.,0
+30547352,1,The endocytoscopic system (ECS) helps in virtual realization of histology and can aid in confirming histological diagnosis in vivo.,0
+30547352,2,We propose replacing biopsy-based histology for esophageal squamous cell carcinoma (ESCC) by using the ECS.,0
+30547352,3,We applied deep-learning artificial intelligence (AI) to analyse ECS images of the esophagus to determine whether AI can support endoscopists for the replacement of biopsy-based histology.,0
+30547352,4,A convolutional neural network-based AI was constructed based on GoogLeNet and trained using 4715 ECS images of the esophagus (1141 malignant and 3574 non-malignant images).,0
+30547352,5,"To evaluate the diagnostic accuracy of the AI, an independent test set of 1520 ECS images, collected from 55 consecutive patients (27 ESCCs and 28 benign esophageal lesions) were examined.",0
+30547352,6,"On the basis of the receiver-operating characteristic curve analysis, the areas under the curve of the total images, higher magnification pictures, and lower magnification pictures were 0.85, 0.90, and 0.72, respectively.",0
+30547352,7,"The AI correctly diagnosed 25 of the 27 ESCC cases, with an overall sensitivity of 92.6%.",0
+30547352,8,"Twenty-five of the 28 non-cancerous lesions were diagnosed as non-malignant, with a specificity of 89.3% and an overall accuracy of 90.9%.",0
+30547352,9,"Two cases of malignant lesions, misdiagnosed as non-malignant by the AI, were correctly diagnosed as malignant by the endoscopist.",0
+30547352,10,"Among the 3 cases of non-cancerous lesions diagnosed as malignant by the AI, 2 were of radiation-related esophagitis and one was of gastroesophageal reflux disease.",0
+30547352,11,AI is expected to support endoscopists in diagnosing ESCC based on ECS images without biopsy-based histological reference.,0
+30348771,1,"Suspected fractures are among the most common reasons for patients to visit emergency departments (EDs), and X-ray imaging is the primary diagnostic tool used by clinicians to assess patients for fractures.",0
+30348771,2,"Missing a fracture in a radiograph often has severe consequences for patients, resulting in delayed treatment and poor recovery of function.",0
+30348771,3,"Nevertheless, radiographs in emergency settings are often read out of necessity by emergency medicine clinicians who lack subspecialized expertise in orthopedics, and misdiagnosed fractures account for upward of four of every five reported diagnostic errors in certain EDs.",0
+30348771,4,"In this work, we developed a deep neural network to detect and localize fractures in radiographs.",0
+30348771,5,"We trained it to accurately emulate the expertise of 18 senior subspecialized orthopedic surgeons by having them annotate 135,409 radiographs.",0
+30348771,6,We then ran a controlled experiment with emergency medicine clinicians to evaluate their ability to detect fractures in wrist radiographs with and without the assistance of the deep learning model.,0
+30348771,7,"The average clinician's sensitivity was 80.8% (95% CI, 76.7-84.1%) unaided and 91.5% (95% CI, 89.3-92.9%) aided, and specificity was 87.5% (95 CI, 85.3-89.5%) unaided and 93.9% (95% CI, 92.9-94.9%) aided.",0
+30348771,8,"The average clinician experienced a relative reduction in misinterpretation rate of 47.0% (95% CI, 37.4-53.9%).",0
+30348771,9,"The significant improvements in diagnostic accuracy that we observed in this study show that deep learning methods are a mechanism by which senior medical specialists can deliver their expertise to generalists on the front lines of medicine, thereby providing substantial improvements to patient care.",0
+30619661,1,To develop a new intelligent system based on deep learning for automatically optical coherence tomography (OCT) images categorization.,0
+30619661,2,"A total of 60,407 OCT images were labeled by 17 licensed retinal experts and 25,134 images were included.",0
+30619661,3,One hundred one-layer convolutional neural networks (ResNet) were trained for the categorization.,0
+30619661,4,We applied 10-fold cross-validation method to train and optimize our algorithms.,0
+30619661,5,"The area under the receiver operating characteristic curve (AUC), accuracy and kappa value were calculated to evaluate the performance of the intelligent system in categorizing OCT images.",0
+30619661,6,We also compared the performance of the system with results obtained by two experts.,0
+30619661,7,"The intelligent system achieved an AUC of 0.984 with an accuracy of 0.959 in detecting macular hole, cystoid macular edema, epiretinal membrane, and serous macular detachment.",0
+30619661,8,"Specifically, the accuracies in discriminating normal images, cystoid macular edema, serous macular detachment, epiretinal membrane, and macular hole were 0.973, 0.848, 0.947, 0.957, and 0.978, respectively.",0
+30619661,9,"The system had a kappa value of 0.929, while the two physicians' kappa values were 0.882 and 0.889 independently.",0
+30619661,10,This deep learning-based system is able to automatically detect and differentiate various OCT images with excellent accuracy.,0
+30619661,11,"Moreover, the performance of the system is at a level comparable to or better than that of human experts.",0
+30619661,12,This study is a promising step in revolutionizing current disease diagnostic pattern and has the potential to generate a significant clinical impact.,0
+30619661,13,This intelligent system has great value in increasing retinal diseases' diagnostic efficiency in clinical circumstances.,0
+29744763,1,"To predict exudative age-related macular degeneration (AMD), we combined a deep convolutional neural network (DCNN), a machine-learning algorithm, with Optos, an ultra-wide-field fundus imaging system.",0
+29744763,2,"First, to evaluate the diagnostic accuracy of DCNN, 364 photographic images (AMD: 137) were amplified and the area under the curve (AUC), sensitivity and specificity were examined.",0
+29744763,3,"Furthermore, in order to compare the diagnostic abilities between DCNN and six ophthalmologists, we prepared yield 84 sheets comprising 50% of normal and wet-AMD data each, and calculated the correct answer rate, specificity, sensitivity, and response times.",0
+29744763,4,"DCNN exhibited 100% sensitivity and 97.31% specificity for wet-AMD images, with an average AUC of 99.76%.",0
+29744763,5,"Moreover, comparing the diagnostic abilities of DCNN versus six ophthalmologists, the average accuracy of the DCNN was 100%.",0
+29744763,6,"On the other hand, the accuracy of ophthalmologists, determined only by Optos images without a fundus examination, was 81.9%.",0
+29744763,7,"A combination of DCNN with Optos images is not better than a medical examination; however, it can identify exudative AMD with a high level of accuracy.",1
+29744763,8,Our system is considered useful for screening and telemedicine.,0
+28681679,1,"Background and purpose - Recent advances in artificial intelligence (deep learning) have shown remarkable performance in classifying non-medical images, and the technology is believed to be the next technological revolution.",0
+28681679,2,"So far it has never been applied in an orthopedic setting, and in this study we sought to determine the feasibility of using deep learning for skeletal radiographs.",0
+28681679,3,"Methods - We extracted 256,000 wrist, hand, and ankle radiographs from Danderyd's Hospital and identified 4 classes: fracture, laterality, body part, and exam view.",0
+28681679,4,We then selected 5 openly available deep learning networks that were adapted for these images.,0
+28681679,5,The most accurate network was benchmarked against a gold standard for fractures.,0
+28681679,6,We furthermore compared the network's performance with 2 senior orthopedic surgeons who reviewed images at the same resolution as the network.,0
+28681679,7,"Results - All networks exhibited an accuracy of at least 90% when identifying laterality, body part, and exam view.",0
+28681679,8,The final accuracy for fractures was estimated at 83% for the best performing network.,0
+28681679,9,The network performed similarly to senior orthopedic surgeons when presented with images at the same resolution as the network.,0
+28681679,10,The 2 reviewer Cohen's kappa under these conditions was 0.76.,0
+28681679,11,"Interpretation - This study supports the use for orthopedic radiographs of artificial intelligence, which can perform at a human level.",0
+28681679,12,"While current implementation lacks important features that surgeons require, e.g. risk of dislocation, classifications, measurements, and combining multiple exam views, these problems have technical solutions that are waiting to be implemented for orthopedics.",0
+30471319,1,"In assessing the severity of age-related macular degeneration (AMD), the Age-Related Eye Disease Study (AREDS) Simplified Severity Scale predicts the risk of progression to late AMD.",0
+30471319,2,"However, its manual use requires the time-consuming participation of expert practitioners.",0
+30471319,3,"Although several automated deep learning systems have been developed for classifying color fundus photographs (CFP) of individual eyes by AREDS severity score, none to date has used a patient-based scoring system that uses images from both eyes to assign a severity score.",0
+30471319,4,"DeepSeeNet, a deep learning model, was developed to classify patients automatically by the AREDS Simplified Severity Scale (score 0-5) using bilateral CFP.",0
+30471319,5,DeepSeeNet was trained on 58 402 and tested on 900 images from the longitudinal follow-up of 4549 participants from AREDS.,0
+30471319,6,Gold standard labels were obtained using reading center grades.,0
+30471319,7,"DeepSeeNet simulates the human grading process by first detecting individual AMD risk factors (drusen size, pigmentary abnormalities) for each eye and then calculating a patient-based AMD severity score using the AREDS Simplified Severity Scale.",0
+30471319,8,"Overall accuracy, specificity, sensitivity, Cohen's kappa, and area under the curve (AUC).",0
+30471319,9,The performance of DeepSeeNet was compared with that of retinal specialists.,0
+30471319,10,"DeepSeeNet performed better on patient-based classification (accuracy = 0.671; kappa = 0.558) than retinal specialists (accuracy = 0.599; kappa = 0.467) with high AUC in the detection of large drusen (0.94), pigmentary abnormalities (0.93), and late AMD (0.97).",0
+30471319,11,DeepSeeNet also outperformed retinal specialists in the detection of large drusen (accuracy 0.742 vs. 0.696; kappa 0.601 vs. 0.517) and pigmentary abnormalities (accuracy 0.890 vs. 0.813; kappa 0.723 vs. 0.535) but showed lower performance in the detection of late AMD (accuracy 0.967 vs. 0.973; kappa 0.663 vs. 0.754).,1
+30471319,12,"By simulating the human grading process, DeepSeeNet demonstrated high accuracy with increased transparency in the automated assignment of individual patients to AMD risk categories based on the AREDS Simplified Severity Scale.",0
+30471319,13,"These results highlight the potential of deep learning to assist and enhance clinical decision-making in patients with AMD, such as early AMD detection and risk prediction for developing late AMD.",1
+30471319,14,DeepSeeNet is publicly available on https://github.com/ncbi-nlp/DeepSeeNet.,0
+30109156,1,Ameloblastomas and keratocystic odontogenic tumors (KCOTs) are important odontogenic tumors of the jaw.,0
+30109156,2,"While their radiological findings are similar, the behaviors of these two types of tumors are different.",0
+30109156,3,Precise preoperative diagnosis of these tumors can help oral and maxillofacial surgeons plan appropriate treatment.,0
+30109156,4,"In this study, we created a convolutional neural network (CNN) for the detection of ameloblastomas and KCOTs.",0
+30109156,5,"Five hundred digital panoramic images of ameloblastomas and KCOTs were retrospectively collected from a hospital information system, whose patient information could not be identified, and preprocessed by inverse logarithm and histogram equalization.",0
+30109156,6,"To overcome the imbalance of data entry, we focused our study on 2 tumors with equal distributions of input data.",0
+30109156,7,We implemented a transfer learning strategy to overcome the problem of limited patient data.,0
+30109156,8,Transfer learning used a 16-layer CNN (VGG-16) of the large sample dataset and was refined with our secondary training dataset comprising 400 images.,0
+30109156,9,A separate test dataset comprising 100 images was evaluated to compare the performance of CNN with diagnosis results produced by oral and maxillofacial specialists.,0
+30109156,10,"The sensitivity, specificity, accuracy, and diagnostic time were 81.8%, 83.3%, 83.0%, and 38 seconds, respectively, for the CNN.",0
+30109156,11,"These values for the oral and maxillofacial specialist were 81.1%, 83.2%, 82.9%, and 23.1 minutes, respectively.",0
+30109156,12,Ameloblastomas and KCOTs could be detected based on digital panoramic radiographic images using CNN with accuracy comparable to that of manual diagnosis by oral maxillofacial specialists.,0
+30109156,13,These results demonstrate that CNN may aid in screening for ameloblastomas and KCOTs in a substantially shorter time.,1
+30457988,1,"Chest radiograph interpretation is critical for the detection of thoracic diseases, including tuberculosis and lung cancer, which affect millions of people worldwide each year.",0
+30457988,2,"This time-consuming task typically requires expert radiologists to read the images, leading to fatigue-based diagnostic error and lack of diagnostic expertise in areas of the world where radiologists are not available.",0
+30457988,3,"Recently, deep learning approaches have been able to achieve expert-level performance in medical image interpretation tasks, powered by large network architectures and fueled by the emergence of large labeled datasets.",0
+30457988,4,The purpose of this study is to investigate the performance of a deep learning algorithm on the detection of pathologies in chest radiographs compared with practicing radiologists.,0
+30457988,5,"We developed CheXNeXt, a convolutional neural network to concurrently detect the presence of 14 different pathologies, including pneumonia, pleural effusion, pulmonary masses, and nodules in frontal-view chest radiographs.",0
+30457988,6,"CheXNeXt was trained and internally validated on the ChestX-ray8 dataset, with a held-out validation set consisting of 420 images, sampled to contain at least 50 cases of each of the original pathology labels.",0
+30457988,7,"On this validation set, the majority vote of a panel of 3 board-certified cardiothoracic specialist radiologists served as reference standard.",0
+30457988,8,We compared CheXNeXt's discriminative performance on the validation set to the performance of 9 radiologists using the area under the receiver operating characteristic curve (AUC).,0
+30457988,9,"The radiologists included 6 board-certified radiologists (average experience 12 years, range 4-28 years) and 3 senior radiology residents, from 3 academic institutions.",0
+30457988,10,We found that CheXNeXt achieved radiologist-level performance on 11 pathologies and did not achieve radiologist-level performance on 3 pathologies.,1
+30457988,11,"The radiologists achieved statistically significantly higher AUC performance on cardiomegaly, emphysema, and hiatal hernia, with AUCs of 0.888 (95% confidence interval [CI] 0.863-0.910), 0.911 (95% CI 0.866-0.947), and 0.985 (95% CI 0.974-0.991), respectively, whereas CheXNeXt's AUCs were 0.831 (95% CI 0.790-0.870), 0.704 (95% CI 0.567-0.833), and 0.851 (95% CI 0.785-0.909), respectively.",1
+30457988,12,"CheXNeXt performed better than radiologists in detecting atelectasis, with an AUC of 0.862 (95% CI 0.825-0.895), statistically significantly higher than radiologists' AUC of 0.808 (95% CI 0.777-0.838); there were no statistically significant differences in AUCs for the other 10 pathologies.",1
+30457988,13,The average time to interpret the 420 images in the validation set was substantially longer for the radiologists (240 minutes) than for CheXNeXt (1.5 minutes).,0
+30457988,14,The main limitations of our study are that neither CheXNeXt nor the radiologists were permitted to use patient history or review prior examinations and that evaluation was limited to a dataset from a single institution.,0
+30457988,15,"In this study, we developed and validated a deep learning algorithm that classified clinically important abnormalities in chest radiographs at a performance level comparable to practicing radiologists.",0
+30457988,16,"Once tested prospectively in clinical settings, the algorithm could have the potential to expand patient access to chest radiograph diagnostics.",1
+30553900,1,To understand the impact of deep learning diabetic retinopathy (DR) algorithms on physician readers in computer-assisted settings.,0
+30553900,2,Evaluation of diagnostic technology.,0
+30553900,3,One thousand seven hundred ninety-six retinal fundus images from 1612 diabetic patients.,0
+30553900,4,"Ten ophthalmologists (5 general ophthalmologists, 4 retina specialists, 1 retina fellow) read images for DR severity based on the International Clinical Diabetic Retinopathy disease severity scale in each of 3 conditions: unassisted, grades only, or grades plus heatmap.",0
+30553900,5,Grades-only assistance comprised a histogram of DR predictions (grades) from a trained deep-learning model.,0
+30553900,6,"For grades plus heatmap, we additionally showed explanatory heatmaps.",0
+30553900,7,"For each experiment arm, we computed sensitivity and specificity of each reader and the algorithm for different levels of DR severity against an adjudicated reference standard.",0
+30553900,8,"We also measured accuracy (exact 5-class level agreement and Cohen's quadratically weighted κ), reader-reported confidence (5-point Likert scale), and grading time.",0
+30553900,9,Readers graded more accurately with model assistance than without for the grades-only condition (P < 0.001).,0
+30553900,10,"Grades plus heatmaps improved accuracy for patients with DR (P < 0.001), but reduced accuracy for patients without DR (P = 0.006).",1
+30553900,11,"Both forms of assistance increased readers' sensitivity moderate-or-worse DR: unassisted: mean, 79.4% [95% confidence interval (CI), 72.3%-86.5%]; grades only: mean, 87.5% [95% CI, 85.1%-89.9%]; grades plus heatmap: mean, 88.7% [95% CI, 84.9%-92.5%] without a corresponding drop in specificity (unassisted: mean, 96.6% [95% CI, 95.9%-97.4%]; grades only: mean, 96.1% [95% CI, 95.5%-96.7%]; grades plus heatmap: mean, 95.5% [95% CI, 94.8%-96.1%]).",1
+30553900,12,Algorithmic assistance increased the accuracy of retina specialists above that of the unassisted reader or model alone; and increased grading confidence and grading time across all readers.,0
+30553900,13,"For most cases, grades plus heatmap was only as effective as grades only.",0
+30553900,14,"Over the course of the experiment, grading time decreased across all conditions, although most sharply for grades plus heatmap.",0
+30553900,15,"Deep learning algorithms can improve the accuracy of, and confidence in, DR diagnosis in an assisted read setting.",0
+30553900,16,"They also may increase grading time, although these effects may be ameliorated with experience.",1
+29224926,1,Development and validation of a fully automated method to detect and quantify macular fluid in conventional OCT images.,0
+29224926,2,Development of a diagnostic modality.,0
+29224926,3,"The clinical dataset for fluid detection consisted of 1200 OCT volumes of patients with neovascular age-related macular degeneration (AMD, n = 400), diabetic macular edema (DME, n = 400), or retinal vein occlusion (RVO, n = 400) acquired with Zeiss Cirrus (Carl Zeiss Meditec, Dublin, CA) (n = 600) or Heidelberg Spectralis (Heidelberg Engineering, Heidelberg, Germany) (n = 600) OCT devices.",0
+29224926,4,A method based on deep learning to automatically detect and quantify intraretinal cystoid fluid (IRC) and subretinal fluid (SRF) was developed.,0
+29224926,5,The performance of the algorithm in accurately identifying fluid localization and extent was evaluated against a manual consensus reading of 2 masked reading center graders.,0
+29224926,6,"Performance of a fully automated method to accurately detect, differentiate, and quantify intraretinal and SRF using area under the receiver operating characteristics curves, precision, and recall.",0
+29224926,7,"The newly designed, fully automated diagnostic method based on deep learning achieved optimal accuracy for the detection and quantification of IRC for all 3 macular pathologies with a mean accuracy (AUC) of 0.94 (range, 0.91-0.97), a mean precision of 0.91, and a mean recall of 0.84.",0
+29224926,8,"The detection and measurement of SRF were also highly accurate with an AUC of 0.92 (range, 0.86-0.98), a mean precision of 0.61, and a mean recall of 0.81, with superior performance in neovascular AMD and RVO compared with DME, which was represented rarely in the population studied.",0
+29224926,9,"High linear correlation was confirmed between automated and manual fluid localization and quantification, yielding an average Pearson's correlation coefficient of 0.90 for IRC and of 0.96 for SRF.",0
+29224926,10,Deep learning in retinal image analysis achieves excellent accuracy for the differential detection of retinal fluid types across the most prevalent exudative macular diseases and OCT devices.,0
+29224926,11,"Furthermore, quantification of fluid achieves a high level of concordance with manual expert assessment.",0
+29224926,12,Fully automated analysis of retinal OCT images from clinical routine provides a promising horizon in improving accuracy and reliability of retinal diagnosis for research and clinical practice in ophthalmology.,0
+29056541,1,The role of artificial intelligence in the diagnosis of Helicobacter pylori gastritis based on endoscopic images has not been evaluated.,0
+29056541,2,"We constructed a convolutional neural network (CNN), and evaluated its ability to diagnose H. pylori infection.",0
+29056541,3,"A 22-layer, deep CNN was pre-trained and fine-tuned on a dataset of 32,208 images either positive or negative for H. pylori (first CNN).",0
+29056541,4,Another CNN was trained using images classified according to 8 anatomical locations (secondary CNN).,0
+29056541,5,"A separate test data set (11,481 images from 397 patients) was evaluated by the CNN, and 23 endoscopists, independently.",0
+29056541,6,"The sensitivity, specificity, accuracy, and diagnostic time were 81.9%, 83.4%, 83.1%, and 198s, respectively, for the first CNN, and 88.9%, 87.4%, 87.7%, and 194s, respectively, for the secondary CNN.",0
+29056541,7,"These values for the 23 endoscopists were 79.0%, 83.2%, 82.4%, and 230Â±65min (85.2%, 89.3%, 88.6%, and 253 ±92min by 6 board-certified endoscopists), respectively.",0
+29056541,8,"The secondary CNN had a significantly higher accuracy than endoscopists (by 5.3%; 95% CI, 0.3-10.2).",0
+29056541,9,H. pylori gastritis could be diagnosed based on endoscopic images using CNN with higher accuracy and in a considerably shorter time compared to manual diagnosis by endoscopists.,1
+30286097,1,"Deep learning (DL) based solutions have been proposed for interpretation of several imaging modalities including radiography, CT, and MR.",0
+30286097,2,"For chest radiographs, DL algorithms have found success in the evaluation of abnormalities such as lung nodules, pulmonary tuberculosis, cystic fibrosis, pneumoconiosis, and location of peripherally inserted central catheters.",0
+30286097,3,Chest radiography represents the most commonly performed radiological test for a multitude of non-emergent and emergent clinical indications.,0
+30286097,4,"This study aims to assess accuracy of deep learning (DL) algorithm for detection of abnormalities on routine frontal chest radiographs (CXR), and assessment of stability or change in findings over serial radiographs.",0
+30286097,5,We processed 874 de-identified frontal CXR from 724 adult patients (> 18 years) with DL (Qure AI).,0
+30286097,6,"Scores and prediction statistics from DL were generated and recorded for the presence of pulmonary opacities, pleural effusions, hilar prominence, and enlarged cardiac silhouette.",0
+30286097,7,"To establish a standard of reference (SOR), two thoracic radiologists assessed all CXR for these abnormalities.",0
+30286097,8,"Four other radiologists (test radiologists), unaware of SOR and DL findings, independently assessed the presence of radiographic abnormalities.",0
+30286097,9,A total 724 radiographs were assessed for detection of findings.,0
+30286097,10,A subset of 150 radiographs with follow up examinations was used to asses change over time.,0
+30286097,11,Data were analyzed with receiver operating characteristics analyses and post-hoc power analysis.,0
+30286097,12,About 42% (305/ 724) CXR had no findings according to SOR; single and multiple abnormalities were seen in 23% (168/724) and 35% (251/724) of CXR.,0
+30286097,13,There was no statistical difference between DL and SOR for all abnormalities (p = 0.2-0.8).,0
+30286097,14,"The area under the curve (AUC) for DL and test radiologists ranged between 0.837-0.929 and 0.693-0.923, respectively.",0
+30286097,15,DL had lowest AUC (0.758) for assessing changes in pulmonary opacities over follow up CXR.,1
+30286097,16,Presence of chest wall implanted devices negatively affected the accuracy of DL algorithm for evaluation of pulmonary and hilar abnormalities.,1
+30286097,17,DL algorithm can aid in interpretation of CXR findings and their stability over follow up CXR.,0
+30286097,18,"However, in its present version, it is unlikely to replace radiologists due to its limited specificity for categorizing specific findings.",1
+29994412,1,Thyroid ultrasonography is a widely used clinical technique for nodule diagnosis in thyroid regions.,0
+29994412,2,"However, it remains difficult to detect and recognize the nodules due to low contrast, high noise, and diverse appearance of nodules.",0
+29994412,3,"In today's clinical practice, senior doctors could pinpoint nodules by analyzing global context features, local geometry structure, and intensity changes, which would require rich clinical experience accumulated from hundreds and thousands of nodule case studies.",0
+29994412,4,"To alleviate doctors' tremendous labor in the diagnosis procedure, we advocate a machine learning approach to the detection and recognition tasks in this paper.",0
+29994412,5,"In particular, we develop a multitask cascade convolution neural network (MC-CNN) framework to exploit the context information of thyroid nodules.",0
+29994412,6,It may be noted that our framework is built upon a large number of clinically confirmed thyroid ultrasound images with accurate and detailed ground truth labels.,0
+29994412,7,"Other key advantages of our framework result from a multitask cascade architecture, two stages of carefully designed deep convolution networks in order to detect and recognize thyroid nodules in a pyramidal fashion, and capturing various intrinsic features in a global-to-local way.",0
+29994412,8,"Within our framework, the potential regions of interest after initial detection are further fed to the spatial pyramid augmented CNNs to embed multiscale discriminative information for fine-grained thyroid recognition.",0
+29994412,9,Experimental results on 4309 clinical ultrasound images have indicated that our MC-CNN is accurate and effective for both thyroid nodules detection and recognition.,0
+29994412,10,"For the correct diagnosis rate of malignant and benign thyroid nodules, its mean Average Precision (mAP) performance can achieve up to [Formula: see text] accuracy, which outperforms the common CNNs by [Formula: see text] on average.",0
+29994412,11,"In addition, we conduct rigorous user studies to confirm that our MC-CNN outperforms experienced doctors, yet only consuming roughly [Formula: see text] ( 1/48) of doctors' examination time on average.",0
+29994412,12,"Therefore, the accuracy and efficiency of our new method exhibit its great potential in clinical applications.",0
+30258856,1,To evaluate the accuracy of a deep learning software (DLS) in the discrimination between phyllodes tumors (PT) and fibroadenomas (FA).,0
+30258856,2,"|In this IRB-approved, retrospective, single-center study, we collected all ultrasound images of histologically secured PT (n = 11, 36 images) and a random control group with FA (n = 15, 50 images).",0
+30258856,3,"The images were analyzed with a DLS designed for industrial grade image analysis, with 33 images withheld from training for validation purposes.",0
+30258856,4,The lesions were also interpreted by four radiologists.,0
+30258856,5,Diagnostic performance was assessed by the area under the receiver operating characteristic curve (AUC).,0
+30258856,6,"Sensitivity, specificity, negative and positive predictive values were calculated at the optimal cut-off (Youden Index).",0
+30258856,7,The DLS was able to differentiate between PT and FA with good diagnostic accuracy (AUC = 0.73) and high negative predictive value (NPV = 100%).,0
+30258856,8,Radiologists showed comparable accuracy (AUC 0.60-0.77) at lower NPV (64-80%).,0
+30258856,9,"When performing the readout together with the DLS recommendation, the radiologist's accuracy showed a non-significant tendency to improve (AUC 0.75-0.87, p = 0.07).",1
+30258856,10,Deep learning based image analysis may be able to exclude PT with a high negative predictive value.,1
+30258856,11,"Integration into the clinical workflow may enable radiologists to more confidently exclude PT, thereby reducing the number of unnecessary biopsies.",1
+22969209,1,To study the role of time-intensity curve (TIC) analysis parameters in a complex system of neural networks designed to classify liver tumors.,0
+22969209,2,"We prospectively included 112 patients with hepatocellular carcinoma (HCC) (n = 41), hypervascular (n = 20) and hypovascular (n = 12) liver metastases, hepatic hemangiomas (n = 16) or focal fatty changes (n = 23) who underwent contrast-enhanced ultrasonography in the Research Center of Gastroenterology and Hepatology, Craiova, Romania.",0
+22969209,3,We recorded full length movies of all contrast uptake phases and post-processed them offline by selecting two areas of interest (one for the tumor and one for the healthy surrounding parenchyma) and consecutive TIC analysis.,0
+22969209,4,"The difference in maximum intensities, the time to reaching them and the aspect of the late/portal phase, as quantified by the neural network and a ratio between median intensities of the central and peripheral areas were analyzed by a feed forward back propagation multi-layer neural network which was trained to classify data into five distinct classes, corresponding to each type of liver lesion.",0
+22969209,5,The neural network had 94.45% training accuracy (95% CI: 89.31%-97.21%) and 87.12% testing accuracy (95% CI: 86.83%-93.17%).,0
+22969209,6,"The automatic classification process registered 93.2% sensitivity, 89.7% specificity, 94.42% positive predictive value and 87.57% negative predictive value.",0
+22969209,7,"The artificial neural networks (ANN) incorrectly classified as hemangyomas three HCC cases and two hypervascular metastases, while in turn misclassifying four liver hemangyomas as HCC (one case) and hypervascular metastases (three cases).",1
+22969209,8,"Comparatively, human interpretation of TICs showed 94.1% sensitivity, 90.7% specificity, 95.11% positive predictive value and 88.89% negative predictive value.",0
+22969209,9,"The accuracy and specificity of the ANN diagnosis system was similar to that of human interpretation of the TICs (P = 0.225 and P = 0.451, respectively).",0
+22969209,10,Hepatocellular carcinoma cases showed contrast uptake during the arterial phase followed by wash-out in the portal and first seconds of the late phases.,0
+22969209,11,"For the hypovascular metastases did not show significant contrast uptake during the arterial phase, which resulted in negative differences between the maximum intensities.",0
+22969209,12,We registered wash-out in the late phase for most of the hypervascular metastases.,0
+22969209,13,Liver hemangiomas had contrast uptake in the arterial phase without agent wash-out in the portal-late phases.,0
+22969209,14,"The focal fatty changes did not show any differences from surrounding liver parenchyma, resulting in similar TIC patterns and extracted parameters.",0
+22969209,15,"Neural network analysis of contrast-enhanced ultrasonography - obtained TICs seems a promising field of development for future techniques, providing fast and reliable diagnostic aid for the clinician.",1
+24371102,1,We investigated whether transesophageal echocardiography (TEE) assisted with a computer-aided diagnostic (CAD) algorithm was superior to TEE in diagnosing left atrial (LA)/left atrial appendage (LAA) thrombi in patients with atrial fibrillation (AF) in a single prospective study.,0
+24371102,2,"Transesophageal echocardiography was performed in patients with AF, and images were reconstructed.",0
+24371102,3,Gray level co-occurrence matrix-based features were calculated and then classified using an artificial neural network.,0
+24371102,4,The original data and processed images by the CAD system were studied by 5 radiologists independently in a blind manner.,0
+24371102,5,The diagnostic performance of each radiologist was evaluated.,0
+24371102,6,One hundred thirty patients with AF were investigated.,0
+24371102,7,Thirty-one patients (23.9%) had a diagnosis of LA/LAA thrombi.,0
+24371102,8,"The mean sensitivity ± SD of TEE for LA/LAA thrombi was 0.933 ± 0.027, which was noticeably improved by CAD (0.955 ± 0.021; P < .05).",0
+24371102,9,"The specificity of TEE was 0.811 ± 0.055, which was markedly lower than that by TEE plus CAD (0.970 ± 0.009; P < .05).",0
+24371102,10,"The positive predictive value of TEE was low (0.613 ± 0.073) compared to that of TEE plus CAD (0.908 ± 0.027; P < .001), whereas the negative predictive values were comparable for TEE, CAD, and TEE plus CAD.",0
+24371102,11,Diagnosis of an LA/LAA thrombus by TEE plus CAD had a higher accuracy rate (0.966 ± 0.011) than that by TEE (0.840 ± 0.047; P < .01).,0
+24371102,12,"The mean area under the receiver operating characteristic curve (Az) for TEE was 0.834 ± 0.009 (95% confidence interval [CI], 0.815-0.852), which was markedly lower than the Az for TEE plus CAD (0.932 ± 0.005; 95% CI, 0.921-0.943).",0
+24371102,13,The use of CAD significantly improved the Az values for all 5 radiologists (P < .001).,0
+24371102,14,The CAD algorithm significantly improves the diagnostic accuracy of TEE for LA/LAA thrombi in patients with AF.,0
+30484822,1,Convolutional neural networks (CNNs) achieve expert-level accuracy in the diagnosis of pigmented melanocytic lesions.,0
+30484822,2,"However, the most common types of skin cancer are nonpigmented and nonmelanocytic, and are more difficult to diagnose.",0
+30484822,3,To compare the accuracy of a CNN-based classifier with that of physicians with different levels of experience.,0
+30484822,4,"A CNN-based classification model was trained on 7895 dermoscopic and 5829 close-up images of lesions excised at a primary skin cancer clinic between January 1, 2008, and July 13, 2017, for a combined evaluation of both imaging methods.",0
+30484822,5,"The combined CNN (cCNN) was tested on a set of 2072 unknown cases and compared with results from 95 human raters who were medical personnel, including 62 board-certified dermatologists, with different experience in dermoscopy.",0
+30484822,6,The proportions of correct specific diagnoses and the accuracy to differentiate between benign and malignant lesions measured as an area under the receiver operating characteristic curve served as main outcome measures.,0
+30484822,7,"Among 95 human raters (51.6% female; mean age, 43.4 years; 95% CI, 41.0-45.7 years), the participants were divided into 3 groups (according to years of experience with dermoscopy): beginner raters (<3 years), intermediate raters (3-10 years), or expert raters (>10 years).",0
+30484822,8,"The area under the receiver operating characteristic curve of the trained cCNN was higher than human ratings (0.742; 95% CI, 0.729-0.755 vs 0.695; 95% CI, 0.676-0.713; P < .001).",0
+30484822,9,"The specificity was fixed at the mean level of human raters (51.3%), and therefore the sensitivity of the cCNN (80.5%; 95% CI, 79.0%-82.1%) was higher than that of human raters (77.6%; 95% CI, 74.7%-80.5%).",0
+30484822,10,"The cCNN achieved a higher percentage of correct specific diagnoses compared with human raters (37.6%; 95% CI, 36.6%-38.4% vs 33.5%; 95% CI, 31.5%-35.6%; P = .001) but not compared with experts (37.3%; 95% CI, 35.7%-38.8% vs 40.0%; 95% CI, 37.0%-43.0%; P = .18).",1
+30484822,11,Neural networks are able to classify dermoscopic and close-up images of nonpigmented lesions as accurately as human experts in an experimental setting.,0
+29955910,1,To compare performances in diagnosing intertrochanteric hip fractures from proximal femoral radiographs between a convolutional neural network and orthopedic surgeons.,0
+29955910,2,"In total, 1773 patients were enrolled in this study.",0
+29955910,3,Hip plain radiographs from these patients were cropped to display only proximal fractured and non-fractured femurs.,0
+29955910,4,Images showing pseudarthrosis after femoral neck fracture and those showing artificial objects were excluded.,0
+29955910,5,This yielded a total of 3346 hip images (1773 fractured and 1573 non-fractured hip images) that were used to compare performances between the convolutional neural network and five orthopedic surgeons.,0
+29955910,6,"The convolutional neural network and orthopedic surgeons had accuracies of 95.5% (95% CI = 93.1-97.6) and 92.2% (95% CI = 89.2-94.9), sensitivities of 93.9% (95% CI = 90.1-97.1) and 88.3% (95% CI = 83.3-92.8), and specificities of 97.4% (95% CI = 94.5-99.4) and 96.8% (95% CI = 95.1-98.4), respectively.",0
+29955910,7,The performance of the convolutional neural network exceeded that of orthopedic surgeons in detecting intertrochanteric hip fractures from proximal femoral radiographs under limited conditions.,1
+29955910,8,"The convolutional neural network has a significant potential to be a useful tool for screening for fractures on plain radiographs, especially in the emergency room, where orthopedic surgeons are not readily available.",0
+28130689,1,This study aimed to compare one state-of-the-art deep learning method and four classical machine learning methods for classifying mediastinal lymph node metastasis of non-small cell lung cancer (NSCLC) from 18F-FDG PET/CT images.,0
+28130689,2,"Another objective was to compare the discriminative power of the recently popular PET/CT texture features with the widely used diagnostic features such as tumor size, CT value, SUV, image contrast, and intensity standard deviation.",0
+28130689,3,"The four classical machine learning methods included random forests, support vector machines, adaptive boosting, and artificial neural network.",0
+28130689,4,The deep learning method was the convolutional neural networks (CNN).,0
+28130689,5,"The five methods were evaluated using 1397 lymph nodes collected from PET/CT images of 168 patients, with corresponding pathology analysis results as gold standard.",0
+28130689,6,"The comparison was conducted using 10 times 10-fold cross-validation based on the criterion of sensitivity, specificity, accuracy (ACC), and area under the ROC curve (AUC).",0
+28130689,7,"For each classical method, different input features were compared to select the optimal feature set.",0
+28130689,8,"Based on the optimal feature set, the classical methods were compared with CNN, as well as with human doctors from our institute.",0
+28130689,9,"For the classical methods, the diagnostic features resulted in 81~85% ACC and 0.87~0.92 AUC, which were significantly higher than the results of texture features.",0
+28130689,10,"CNN's sensitivity, specificity, ACC, and AUC were 84, 88, 86, and 0.91, respectively.",0
+28130689,11,There was no significant difference between the results of CNN and the best classical method.,1
+28130689,12,"The sensitivity, specificity, and ACC of human doctors were 73, 90, and 82, respectively.",0
+28130689,13,All the five machine learning methods had higher sensitivities but lower specificities than human doctors.,1
+28130689,14,The present study shows that the performance of CNN is not significantly different from the best classical methods and human doctors for classifying mediastinal lymph node metastasis of NSCLC from PET/CT images.,0
+28130689,15,"Because CNN does not need tumor segmentation or feature calculation, it is more convenient and more objective than the classical methods.",0
+28130689,16,"However, CNN does not make use of the import diagnostic features, which have been proved more discriminative than the texture features for classifying small-sized lymph nodes.",1
+28130689,17,"Therefore, incorporating the diagnostic features into CNN is a promising direction for future research.",0
+30050783,1,Identification of pre-invasive lesions (PILs) and invasive adenocarcinomas (IACs) can facilitate treatment selection.,0
+30050783,2,This study aimed to develop an automatic classification framework based on a 3D convolutional neural network (CNN) to distinguish different types of lung cancer using computed tomography (CT) data.,0
+30050783,3,"The CT data of 1,545 patients suffering from pre-invasive or invasive lung cancer were collected from Fudan University Shanghai Cancer Center.",0
+30050783,4,All of the data were preprocessed through lung mask extraction and 3D reconstruction to adapt to different imaging scanners or protocols.,0
+30050783,5,The general flow for the classification framework consisted of nodule detection and cancer classification.,0
+30050783,6,"The performance of our classification algorithm was evaluated using a receiver operating characteristic (ROC) analysis, with diagnostic results from three experienced radiologists.",0
+30050783,7,"The sensitivity, specificity, accuracy, and AUC (area under the ROC curve) values of our proposed automatic classification method were 88.5%, 80.1%, 84.0%, and 89.2%, respectively.",0
+30050783,8,The results of the CNN classification method were compared to those of three experienced radiologists.,0
+30050783,9,The AUC value of our method (AUC =0.892) was higher than those of all radiologists (radiologist 1: 80.5%; radiologist 2: 83.9%; and radiologist 3: 86.7%).,0
+30050783,10,The 3D CNN-based classification algorithm is a promising tool for the diagnosis of pre-invasive and invasive lung cancer and for the treatment choice decision.,0
+30621704,1,"In this study, images of 2450 benign thyroid nodules and 2557 malignant thyroid nodules were collected and labeled, and an automatic image recognition and diagnosis system was established by deep learning using the YOLOv2 neural network.",0
+30621704,2,"The performance of the system in the diagnosis of thyroid nodules was evaluated, and the application value of artificial intelligence in clinical practice was investigated.",0
+30621704,3,The ultrasound images of 276 patients were retrospectively selected.,0
+30621704,4,The diagnoses of the radiologists were determined according to the Thyroid Imaging Reporting and Data System; the images were automatically recognized and diagnosed by the established artificial intelligence system.,0
+30621704,5,Pathological diagnosis was the gold standard for the final diagnosis.,0
+30621704,6,The performances of the established system and the radiologists in diagnosing the benign and malignant thyroid nodules were compared.,0
+30621704,7,"The artificial intelligence diagnosis system correctly identified the lesion area, with an area under the receiver operating characteristic (ROC) curve of 0.902, which is higher than that of the radiologists (0.859).",0
+30621704,8,This finding indicates a higher diagnostic accuracy (p = 0.0434).,0
+30621704,9,"The sensitivity, positive predictive value, negative predictive value, and accuracy of the artificial intelligence diagnosis system for the diagnosis of malignant thyroid nodules were 90.5%, 95.22%, 80.99%, and 90.31%, respectively, and the performance did not significantly differ from that of the radiologists (p > 0.05).",0
+30621704,10,"The artificial intelligence diagnosis system had a higher specificity (89.91% vs 77.98%, p = 0.026).",0
+30621704,11,"Compared with the performance of experienced radiologists, the artificial intelligence system has comparable sensitivity and accuracy for the diagnosis of malignant thyroid nodules and better diagnostic ability for benign thyroid nodules.",0
+30621704,12,"As an auxiliary tool, this artificial intelligence diagnosis system can provide radiologists with sufficient assistance in the diagnosis of benign and malignant thyroid nodules.",0
+24619240,1,DMSA imaging is carried out in nuclear medicine to assess the level of functional renal tissue in patients.,0
+24619240,2,This study investigated the use of an artificial neural network to perform diagnostic classification of these scans.,0
+24619240,3,"Using the radiological report as the gold standard, the network was trained to classify DMSA scans as positive or negative for defects using a representative sample of 257 previously reported images.",0
+24619240,4,The trained network was then independently tested using a further 193 scans and achieved a binary classification accuracy of 95.9%.,0
+24619240,5,"The performance of the network was compared with three qualified expert observers who were asked to grade each scan in the 193 image testing set on a six point defect scale, from 'definitely normal' to 'definitely abnormal'.",0
+24619240,6,"A receiver operating characteristic analysis comparison between a consensus operator, generated from the scores of the three expert observers, and the network revealed a statistically significant increase (± < 0.05) in performance between the network and operators.",0
+24619240,7,"A further result from this work was that when suitably optimized, a negative predictive value of 100% for renal defects was achieved by the network, while still managing to identify 93% of the negative cases in the dataset.",0
+24619240,8,These results are encouraging for application of such a network as a screening tool or quality assurance assistant in clinical practice.,0
+30861533,1,Gastric cancer is the third most lethal malignancy worldwide.,0
+30861533,2,A novel deep convolution neural network (DCNN) to perform visual tasks has been recently developed.,0
+30861533,3,The aim of this study was to build a system using the DCNN to detect early gastric cancer (EGC) without blind spots during esophagogastroduodenoscopy (EGD).|3170 gastric cancer and 5981 benign images were collected to train the DCNN to detect EGC.,0
+30861533,4,A total of 24549 images from different parts of stomach were collected to train the DCNN to monitor blind spots.,0
+30861533,5,Class activation maps were developed to automatically cover suspicious cancerous regions.,0
+30861533,6,A grid model for the stomach was used to indicate the existence of blind spots in unprocessed EGD videos.,0
+30861533,7,"The DCNN identified EGC from non-malignancy with an accuracy of 92.5 %, a sensitivity of 94.0 %, a specificity of 91.0 %, a positive predictive value of 91.3 %, and a negative predictive value of 93.8 %, outperforming all levels of endoscopists.",0
+30861533,8,"In the task of classifying gastric locations into 10 or 26 parts, the DCNN achieved an accuracy of 90 % or 65.9 %, on a par with the performance of experts.",0
+30861533,9,"In real-time unprocessed EGD videos, the DCNN achieved automated performance for detecting EGC and monitoring blind spots.",0
+30861533,10,"We developed a system based on a DCNN to accurately detect EGC and recognize gastric locations better than endoscopists, and proactively track suspicious cancerous lesions and monitor blind spots during EGD.",0
+31041565,1,"To evaluate the performance of a novel three-dimensional (3D) joint convolutional and recurrent neural network (CNN-RNN) for the detection of intracranial hemorrhage (ICH) and its five subtypes (cerebral parenchymal, intraventricular, subdural, epidural, and subarachnoid) in non-contrast head CT.",0
+31041565,2,"A total of 2836 subjects (ICH/normal, 1836/1000) from three institutions were included in this ethically approved retrospective study, with a total of 76,621 slices from non-contrast head CT scans.",0
+31041565,3,"ICH and its five subtypes were annotated by three independent experienced radiologists, with majority voting as reference standard for both the subject level and the slice level.",0
+31041565,4,"Ninety percent of data was used for training and validation, and the rest 10% for final evaluation.",0
+31041565,5,"A joint CNN-RNN classification framework was proposed, with the flexibility to train when subject-level or slice-level labels are available.",0
+31041565,6,The predictions were compared with the interpretations from three junior radiology trainees and an additional senior radiologist.,0
+31041565,7,It took our algorithm less than 30 s on average to process a 3D CT scan.,0
+31041565,8,"For the two-type classification task (predicting bleeding or not), our algorithm achieved excellent values (≥0.98) across all reporting metrics on the subject level.",0
+31041565,9,"For the five-type classification task (predicting five subtypes), our algorithm achieved > 0.8 AUC across all subtypes.",0
+31041565,10,The performance of our algorithm was generally superior to the average performance of the junior radiology trainees for both two-type and five-type classification tasks.,1
+31041565,11,"|The proposed method was able to accurately detect ICH and its subtypes with fast speed, suggesting its potential for assisting radiologists and physicians in their clinical diagnosis workflow.",1
+31041565,12,"A 3D joint CNN-RNN deep learning framework was developed for ICH detection and subtype classification, which has the flexibility to train with either subject-level labels or slice-level labels.",0
+31041565,13,This deep learning framework is fast and accurate at detecting ICH and its subtypes.,0
+31041565,14,"The performance of the automated algorithm was superior to the average performance of three junior radiology trainees in this work, suggesting its potential to reduce initial misinterpretations.",1
+29513718,1,"Acral melanoma is the most common type of melanoma in Asians, and usually results in a poor prognosis due to late diagnosis.",0
+29513718,2,We applied a convolutional neural network to dermoscopy images of acral melanoma and benign nevi on the hands and feet and evaluated its usefulness for the early diagnosis of these conditions.,0
+29513718,3,"A total of 724 dermoscopy images comprising acral melanoma (350 images from 81 patients) and benign nevi (374 images from 194 patients), and confirmed by histopathological examination, were analyzed in this study.",0
+29513718,4,"To perform the 2-fold cross validation, we split them into two mutually exclusive subsets: half of the total image dataset was selected for training and the rest for testing, and we calculated the accuracy of diagnosis comparing it with the dermatologist's and non-expert's evaluation.",0
+29513718,5,"The accuracy (percentage of true positive and true negative from all images) of the convolutional neural network was 83.51% and 80.23%, which was higher than the non-expert's evaluation (67.84%, 62.71%) and close to that of the expert (81.08%, 81.64%).",1
+29513718,6,"Moreover, the convolutional neural network showed area-under-the-curve values like 0.8, 0.84 and Youden's index like 0.6795, 0.6073, which were similar score with the expert.",0
+29513718,7,"Although further data analysis is necessary to improve their accuracy, convolutional neural networks would be helpful to detect acral melanoma from dermoscopy images of the hands and feet.",1
+30279243,1,":Identification of early-stage pulmonary adenocarcinomas before surgery, especially in cases of subcentimeter cancers, would be clinically important and could provide guidance to clinical decision making.",0
+30279243,2,"In this study, we developed a deep learning system based on 3D convolutional neural networks and multitask learning, which automatically predicts tumor invasiveness, together with 3D nodule segmentation masks.",0
+30279243,3,The system processes a 3D nodule-centered patch of preprocessed CT and learns a deep representation of a given nodule without the need for any additional information.,0
+30279243,4,"A dataset of 651 nodules with manually segmented voxel-wise masks and pathological labels of atypical adenomatous hyperplasia (AAH), adenocarcinomas in situ (AIS), minimally invasive adenocarcinoma (MIA), and invasive pulmonary adenocarcinoma (IA) was used in this study.",0
+30279243,5,We trained and validated our deep learning system on 523 nodules and tested its performance on 128 nodules.,0
+30279243,6,"An observer study with 2 groups of radiologists, 2 senior and 2 junior, was also investigated.",0
+30279243,7,"We merged AAH and AIS into one single category AAH-AIS, comprising a 3-category classification in our study.",0
+30279243,8,"The proposed deep learning system achieved better classification performance than the radiologists; in terms of 3-class weighted average F1 score, the model achieved 63.3% while the radiologists achieved 55.6%, 56.6%, 54.3%, and 51.0%, respectively.",0
+30279243,9,"These results suggest that deep learning methods improve the yield of discriminative results and hold promise in the CADx application domain, which could help doctors work efficiently and facilitate the application of precision medicine.",1
+30279243,10,SIGNIFICANCE: Machine learning tools are beginning to be implemented for clinical applications.,0
+30279243,11,"This study represents an important milestone for this emerging technology, which could improve therapy selection for patients with lung cancer.",1
+30193354,1,This study uses fundus images from a national data set to assess 2 deep learning methods for referability classification of age-related macular degeneration.,0
+NOID1,1,Diabetes is threatening the health of many people in the world.,0
+NOID1,2,People may be diagnosed with diabetes only when symptoms or complications such as diabetic retinopathy start to appear.,0
+NOID1,3,Retinal images reflect the health of the circulatory system and they are considered as a cheap and patient-friendly source of information for diagnosis purposes.,0
+NOID1,4,Convolutional neural networks have enhanced the performance of conventional image processing techniques significantly by neglecting inconsistent feature extraction pipelines and learning informative features automatically from data.,0
+NOID1,5,"In this work we explore the possibility of using the deep residual networks as one of the state-of-the-art convolutional networks to diagnose diabetes directly from retinal images, without using any blood glucose information.",0
+NOID1,6,The results indicate that convolutional networks are able to capture informative differences between healthy and diabetic patients and it is possible to differentiate between these two groups using only the retinal images.,0
+NOID1,7,The performance of the proposed method is significantly higher than human experts.,0
+NOID2,1,This paper studies the computer-aided diagnosis technique potential in discriminating accurately benign masses among a given subset of 100 patients which makes it possible to degrade cases from Breast Imaging-Reporting and Data System (BIRADS) 3 to BIRADS 2 avoiding prospective biopsies.,0
+NOID2,2,Such accuracy is required since expert radiologists assign BIRADS3 category by default mostly for reducing false negative cases.,0
+NOID2,3,We aim here at classifying masses on a risk rate scale for malignancy.,0
+NOID2,4,The proposed system segments automatically potential masses and quantifies critical related features.,0
+NOID2,5,A decision tree was accordingly applied.,0
+NOID2,6,"In a first level, a mass detection is based on a new local pattern model named Weighted Gray Level and Local Difference features (WGLLD) and a nearest neighborhood (NN) a classifier.",0
+NOID2,7,"In the second level, Zernike moment features were used for shape characterization with connection by an Artificial Neural Network (ANN) based classifier, after that we segment masses and extract shape features using Zernike moments.",0
+NOID2,8,"For validation purposes, a total of 100 lesions from local breast database (FDDSM)is used.",0
+NOID2,9,Most of these cases are biopsy confirmed.,0
+NOID2,10,"The system successfully downgraded 7 cases over 41 rated by the expert as belonging to BIRADS 3 to BIRADS 2, but, it recommended biopsy for 41/100 atypical lesions.",1
+NOID2,11,"Ultimately, the system identified 59 benign lesions to BIRADS 2, 7 cases from these were classified as belonging to BIRADS 3 by the expert, and thus reached a reduction of unnecessary breast biopsies.",0
+NOID2,12,The proposed CAD system allows a classification rate of 98% (only one benign case is missed).,0
+NOID2,13,The proposed Computer Aided Diagnosis (CAD) system demonstrated the ability to predict benignancy of the most difficult cases.30,0
+NOID2,14,Appearance changes were also shown to be more characterizing after mammogram enhancement.,0
+NOID2,15,"With further validation, these results could form a substrate for a clinically useful computer-aided diagnosis tool which could provide earlier detection of breast cancer signs.",1
+NOID3,1,Melanoma is the deadliest form of skin cancer.,0
+NOID3,2,"While curable with early detection, only highly trained specialists are capable of accurately recognizing the disease.",0
+NOID3,3,"As expertise is in limited supply, automated systems capable of identifying disease could save lives, reduce unnecessary biopsies, and reduce costs.",0
+NOID3,4,"Toward this goal, we propose a system that combines recent developments in deep learning with established machine learning approaches, creating ensembles of methods that are capable of segmenting skin lesions, as well as analyzing the detected area and surrounding tissue for melanoma detection.",0
+NOID3,5,"The system is evaluated using the largest publicly available benchmark dataset of dermoscopic images, containing 900 training and 379 testing images.",0
+NOID3,6,"New state-of-the-art performance levels are demonstrated, leading to an improvement in the area under receiver operating characteristic curve of 7.5% (0.843 vs. 0.783), in average precision of 4% (0.649 vs. 0.624), and in specificity measured at the clinically relevant 95% sensitivity operating point 2.9 times higher than the previous state-of-the-art (36.8% specificity compared to 12.5%).",0
+NOID3,7,"Compared to the average of 8 expert dermatologists on a subset of 100 test images, the proposed system produces a higher accuracy (76% vs. 70.5%), and specificity (62% vs. 59%) evaluated at an equivalent sensitivity (82%).",0
+NOID4,1,We describe a deep learning approach for automated brain hemorrhage detection from computed tomography (CT) scans.,0
+NOID4,2,Our model emulates the procedure followed by radiologists to analyse a 3D CT scan in real-world.,0
+NOID4,3,"Similar to radiologists, the model sifts through 2D cross-sectional slices while paying close attention to potential hemorrhagic regions.",0
+NOID4,4,"Further, the model utilizes 3D context from neighboring slices to improve predictions at each slice and subsequently, aggregates the slice-level predictions to provide diagnosis at CT level.",0
+NOID4,5,We refer to our proposed approach as Recurrent Attention DenseNet (RADnet) as it employs original DenseNet architecture along with adding the components of attention for slice level predictions and recurrent neural network layer for incorporating 3D context.,0
+NOID4,6,The real-world performance of RADnet has been benchmarked against independent analysis performed by three senior radiologists for 77 brain CTs.,0
+NOID4,7,RADnet demonstrates 81.82% hemorrhage prediction accuracy at CT level that is comparable to radiologists.,0
+NOID4,8,"Further, RADnet achieves higher recall than two of the three radiologists, which is remarkable.",0
+NOID5,1,"Since the mortality rate of breast cancer in women is gradually increasing, a well-designed computer-aided diagnosis (CAD) system can assist doctors in early diagnosis of the breast cancer.",0
+NOID5,2,"In this paper, a breast nodule CAD system is developed, and this system aims for a high-performance classifier for characterizing breast nodules as either benign or malignant on an ultrasonic image.",0
+NOID5,3,A fuzzy cerebellar model neural network (FCMNN) CAD system is developed.,0
+NOID5,4,"Since the FCMNN contains the layers with overlapped membership functions, it possesses more generalization ability than a conventional fuzzy neural network.",0
+NOID5,5,"Moreover, a FCMNN can be viewed as a generation of a fuzzy neural network; if each layer of FCMNN is reduced to contain only one different neuron, then the FCMNN can be reduced to a fuzzy neural network.",0
+NOID5,6,"Thus, it is used to develop a CAD system; this is a novel research on a breast nodule ultrasound image CAD system using an FCMNN.",0
+NOID5,7,"The testing of 65 practical ultrasound images demonstrates that the proposed FCMNN CAD system can distinguish benign or malignant breast nodules with relatively high accuracy (more than 90%), and the intensive experimental results where the resulting classifier outperforms other classifiers, such as a support vector machine and a neural network by using the N -folds cross-validation method are shown.",0
+NOID5,8,"The experimental results are even higher than doctor's diagnosis; therefore, the proposed diagnostic system can serve as an assistant system to help doctors correctly diagnose breast nodules.",0
+NOID6,1,Retinopathy of prematurity (ROP) is one of the main causes of childhood blindness.,0
+NOID6,2,"However, insufficient ophthalmologists are qualified for ROP screening.",0
+NOID6,3,The objective of this paper is to evaluate the performance of a deep neural network (DNN) for the automated screening of ROP.,0
+NOID6,4,The training and test sets came from 420 365 wide-angle retina images from ROP screening.,0
+NOID6,5,A transfer learning scheme was designed to train the DNN classifier.,0
+NOID6,6,"First, a pre-processing classifier separated unqualified images.",0
+NOID6,7,"Then, pediatric ophthalmologists labeled each image as either ROP or negative.",0
+NOID6,8,"The labeled training set (8090 positive images and 9711 negative ones) was used to fine-tune three candidate DNN classifiers (AlexNet, VGG-16, and GoogLeNet) with the transfer learning approach.",0
+NOID6,9,The resultant classifiers were evaluated on a test dataset of 1742 samples and compared with five independent pediatric retinal ophthalmologists.,0
+NOID6,10,"The receiver operating characteristic (ROC) curve, ROC area under the curve, and precision-recall (P-R) curve on the test dataset were analyzed.",0
+NOID6,11,"Accuracy, precision, sensitivity (recall), specificity, F1 score, the Youden index, and the Matthews correlation coefficient were evaluated at different sensitivity cutoffs.",0
+NOID6,12,The data from the five pediatric ophthalmologists were plotted in the ROC and P-R curves to visualize their performances.,0
+NOID6,13,VGG-16 achieved the best performance.,0
+NOID6,14,"At the cutoff point that maximized F1 score in the P-R curve, the final DNN model achieved 98.8% accuracy, 94.1% sensitivity, 99.3% specificity, and 93.0% precision.",0
+NOID6,15,"This was comparable to the pediatric ophthalmologists (98.8% accuracy, 93.5% sensitivity, 99.5% specificity, and 96.7% precision).",0
+NOID6,16,"In the screening of ROP using the evaluation of wide-angle retinal images, DNNs had high accuracy, sensitivity, specificity, and precision, comparable to that of pediatric ophthalmologists.",0
+NOID7,1,Using artificial intelligence (AI) to prevent and treat diseases is an ultimate goal in computational medicine.,0
+NOID7,2,"Although AI has been developed for screening and assisted decision-making in disease prevention and management, it has not yet been validated for systematic application in the clinic.",0
+NOID7,3,"In the context of rare diseases, the main strategy has been to build specialized care centres; however, these centres are scattered and their coverage is insufficient, which leaves a large proportion of rare-disease patients with inadequate care.",0
+NOID7,4,"Here, we show that an AI agent using deep learning, and involving convolutional neural networks for diagnostics, risk stratification and treatment suggestions, accurately diagnoses and provides treatment decisions for congenital cataracts in an in silico test, in a website-based study, in a ‘finding a needle in a haystack’ test and in a multihospital clinical trial.",0
+NOID7,5,We also show that the AI agent and individual ophthalmologists perform equally well.,0
+NOID7,6,"Moreover, we have integrated the AI agent with a cloud-based platform for multihospital collaboration, designed to improve disease management for the benefit of patients with rare diseases.",0
